@@ -239,8 +239,8 @@ maxHeight:"56px"
                     width: "28px",
                     height: "28px",
                     ["@media (max-width:1047px)"]: {
-                      width: "48px",
-                      height: "48px",
+                      width: "24px",
+                      height: "24px",
                     },
                   }}
                 />
@@ -261,9 +261,9 @@ maxHeight:"56px"
                   width: "28px",
                   height: "28px",
                   ["@media (max-width:1047px)"]: {
-                    width: "48px",
-                    height: "48px",
-                  },
+                      width: "24px",
+                      height: "24px",
+                    },
                 }}
               />
             </Button>

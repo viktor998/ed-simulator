@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
-import { Box, Button, Typography, useMediaQuery } from "@mui/material";
+import { Box, Button, Typography, useMediaQuery} from "@mui/material";
 import dayjs from "dayjs";
 import customParseFormat from "dayjs/plugin/customParseFormat";
 import React, { useCallback, useEffect, useState } from "react";
@@ -43,8 +43,8 @@ const QuizPage = () => {
     setActiveQuestion((r) => r + 1);
   };
   const back = () => {
-    if (activeQuestion - 1 === q) return;
-    setActiveQuestion((r) => r + 1);
+    if (activeQuestion === 0) return;
+    setActiveQuestion((r) => r - 1);
   };
   const selectAnswer = (value) => {
     const dpCopyAnswer = [...answers];
@@ -85,7 +85,12 @@ const QuizPage = () => {
           <img src={logoEduBianco} alt="Logo Edusogno" />
         </Box>
         <div className="absolute top-0 left-0 progress"></div>
-        <div className="absolute right-0 top-0 bg-white nascondi  w-[85%] "></div>
+        <Box
+          className={`absolute right-0 top-0 bg-white nascondi transition-all`}
+          sx={{
+          width:`${100 - ((activeQuestion+0.01) / (questions.length - 1)) * 100}%`,
+          transition:"all 2s"}}
+        ></Box>
       </Header>
 
       <main className="relative">
@@ -112,7 +117,7 @@ const QuizPage = () => {
               },
             }}
           >
-            I called Tom, ___ he didn't answer.
+            {questions[activeQuestion].question}
           </Typography>
           <Box
             sx={{
@@ -120,18 +125,24 @@ const QuizPage = () => {
               gridTemplateColumns: "1fr",
               width: "90%",
               gap: "1rem",
+               "& button": {
+               
+fontWeight:"400",
+maxHeight:"56px"
+                },
               ["@media (min-width:763px)"]: {
                 gridTemplateColumns: "1fr 1fr 1fr 1fr",
                 "& button": {
                   width: "100%",
                   minWidth: "174px",
                   textTransform: "none",
+                  fontSize:"24px"
                 },
               },
               ["@media (min-width:1047px)"]: {
                 "& button": {
                   width: "100%",
-                  minWidth: "274px",
+                  minWidth: "calc(200px + 5vw)",
                   textTransform: "none",
                 },
               },
@@ -145,14 +156,18 @@ const QuizPage = () => {
           >
             {questions[activeQuestion].options.map((r) => (
               <Button
-                size="medium"
+                size="large"
                 variant="contained"
+                disableElevation
                 color={r === answers[activeQuestion] ? "primary" : "buttonBack"}
                 onClick={() => {
                   selectAnswer(r);
                 }}
                 sx={{
-                  color: r === answers[activeQuestion] ? "#ffffff" : "#000000",
+                  color:
+                    r === answers[activeQuestion]
+                      ? "#ffffff"
+                      : "#2D224C!important",
                 }}
               >
                 {r}
@@ -164,29 +179,21 @@ const QuizPage = () => {
               display: "flex",
               justifyContent: "center",
               gap: "1rem",
-
-              "& button:first-of-type": {
-                height: "fit-content",
-                width: "254px",
-                display: "flex",
-                flexDirection: "row",
-                position: "relative",
-                "& svg": {
-                  position: "absolute",
-                  left: "12px",
-                },
-              },
               "& button": {
                 height: "fit-content",
                 width: "254px",
                 display: "flex",
                 flexDirection: "row",
                 position: "relative",
-                "& svg": {
-                  position: "absolute",
-                  right: "12px",
-                },
               },
+              "& button:first-of-type": {
+                height: "fit-content",
+                width: "254px",
+                display: "flex",
+                flexDirection: "row",
+                position: "relative",
+              },
+
               ["@media (max-width:1047px)"]: {
                 "& button": {
                   aspectRatio: "1/1",
@@ -223,12 +230,14 @@ const QuizPage = () => {
               <Button
                 variant="contained"
                 color="buttonBack"
+                  size="large"
                 onClick={() => back()}
               >
                 <ChevronLeft
+                  className="lg:absolute lg:left-4"
                   sx={{
-                    width: "14px",
-                    height: "14px",
+                    width: "28px",
+                    height: "28px",
                     ["@media (max-width:1047px)"]: {
                       width: "48px",
                       height: "48px",
@@ -242,13 +251,15 @@ const QuizPage = () => {
               disabled={!Boolean(answers[activeQuestion])}
               variant="contained"
               color="button"
+                size="large"
               onClick={() => next()}
             >
               {!smUp && <span>Next</span>}
               <ChevronRight
+                className="lg:absolute lg:right-4"
                 sx={{
-                  width: "14px",
-                  height: "14px",
+                  width: "28px",
+                  height: "28px",
                   ["@media (max-width:1047px)"]: {
                     width: "48px",
                     height: "48px",

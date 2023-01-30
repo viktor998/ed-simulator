@@ -53,7 +53,7 @@ const ResultPage = () => {
         display: "grid",
         backgroundColor: "#2D224C",
         gridTemplateColumns: "1fr",
-        gridTemplateRows: "1fr 5fr 6fr",
+        gridTemplateRows: "1fr 6fr 6fr",
         height: "calc(var(--vh, 1vh) * 100)",
         "&::-webkit-scrollbar": {
           width: "0em",
@@ -61,7 +61,7 @@ const ResultPage = () => {
         "scrollbar-width": "none",
         ["@media (max-width:1047px)"]: {
           gap: "2vh",
-          gridTemplateRows: "1fr 3fr 5fr",
+          gridTemplateRows: "1fr 5fr 5fr",
           // paddingLeft: "40vw",
           // paddingRight: "40vw",
         },
@@ -86,6 +86,8 @@ const ResultPage = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
+          justifyContent: "end",
+          paddingBottom:"8vh"
         }}
       >
         <Box
@@ -125,7 +127,7 @@ const ResultPage = () => {
                 color: "#74DFAC",
               },
               textAlign: "center",
-              maxWidth: "46%",
+              maxWidth: "60%",
               ["@media (max-width:1047px)"]: {
                 fontSize: "calc(12px + 0.5vw)",
                 textColor: "#ffffff",
@@ -133,7 +135,7 @@ const ResultPage = () => {
             }}
           >
             Purtroppo tramite questo test possiamo solo darti una stima del tuo
-            livello di grammatica che è intorno ad un <b>[LIVELLO]</b>
+            livello di grammatica che è intorno ad un <br/> <b>[LIVELLO]</b>
           </Typography>
         </Box>
       </Box>
@@ -144,7 +146,7 @@ const ResultPage = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center",
+          justifyContent: "start",
           gap: "1rem",
         }}
       >
@@ -162,7 +164,7 @@ const ResultPage = () => {
             },
           }}
         >
-          Per scoprire qual è il tuo vero livello e ottenere la
+          Per scoprire qual è il tuo vero livello e ottenere la&nbsp;
           <b>certificazione</b>, fissa una prova di speaking gratuita con i
           nostri esperti
         </Typography>
@@ -174,11 +176,16 @@ const ResultPage = () => {
               maxWidth: "418px",
               width: "100%",
               boxShadow: "0px 0px 30px #D4145A",
+              height:"10vh",
+                              fontSize:"calc(32px + 0.5vh)!important",
               // color: "#31602A!important",
-              ["@media (max-width:1047px)"]: {
-                maxWidth: "70%",
+              ["@media (max-width:763px)"]: {
+                maxWidth: "75%",
+                 fontSize:"calc(16px + 0.5vh)!important",
+
               },
             }}
+              size="large"
             color="button"
             variant="contained"
           >

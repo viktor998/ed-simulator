@@ -84,8 +84,8 @@ const LandingPage = () => {
             display: "flex",
             justifyContent: "center",
             flexDirection: "row",
-            width: "calc(270px +  5vw)",
-            height: "calc(270px + 5vh)",
+            width: "calc(200px +  10vw)",
+            height: "calc(200px + 10vh)",
             margin: "auto",
             ["@media (max-width:1047px)"]: {
               width: "calc(120px + 1vw)",
@@ -176,6 +176,7 @@ const LandingPage = () => {
           }}
           color="green"
           variant="contained"
+            size="large"
           onClick={() => navigate("/quiz")}
         >
           INIZIA IL TEST

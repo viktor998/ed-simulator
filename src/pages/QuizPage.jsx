@@ -38,7 +38,7 @@ const QuizPage = () => {
   const smUp = useMediaQuery("(max-width:1047px)");
   const next = () => {
     if (activeQuestion + 1 === questions.length - 1) {
-      navigate("/");
+      navigate("/results");
     }
     setActiveQuestion((r) => r + 1);
   };

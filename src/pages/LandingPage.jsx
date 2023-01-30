@@ -13,7 +13,7 @@ import {
   CircularProgress,
 } from "@mui/material";
 import React, { useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 import Header from "../components/Header";
 import useMyContext from "../hooks/useMyContext";
@@ -37,6 +37,7 @@ import Footer from "../components/Footer";
 }; */
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   return (
     <Box
       sx={{
@@ -170,6 +171,7 @@ const LandingPage = () => {
           }}
           color="green"
           variant="contained"
+          onClick={() => navigate("/quiz")}
         >
           INIZIA IL TEST
         </Button>

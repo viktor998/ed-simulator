@@ -133,8 +133,7 @@ const LandingPage = () => {
               },
             }}
           >
-            C1, B2 o Shish? 🇬🇧
-          </Typography>
+            C1, B2 o Shish? 🇬🇧          </Typography>
         </Box>
       </Box>
 

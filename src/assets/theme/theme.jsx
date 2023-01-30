@@ -224,7 +224,7 @@ export const theme = createTheme({
           fontSize: "15px",
           borderRadius: "11px",
           padding: "14px 22px",
-          fontWeight: "700",
+          fontWeight: "600",
           ["@media (min-width:768px)"]: {
             // eslint-disable-line no-useless-computed-key
             fontSize: "16px",

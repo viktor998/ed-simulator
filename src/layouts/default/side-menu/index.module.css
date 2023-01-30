@@ -1,0 +1,76 @@
+.root {
+  display: block;
+  background: white;
+  flex: 1 1 15%;
+  gap: 16px;
+  max-width: 236px;
+}
+.list {
+  display: grid;
+  grid-template-rows: 1fr 3fr 6fr;
+  align-items: center;
+  height: 100%;
+  background: white;
+  @apply px-2 md:px-3 pt-4;
+  gap: 16px;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: auto;
+  margin-top: 6vh;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 99.5%;
+  color: #d4145a;
+  text-transform: uppercase;
+  margin-top: min(63px, 15%);
+  margin-bottom: min(12px, 15%);
+}
+.item {
+  display: grid;
+  grid-template-columns: 25px auto;
+  align-items: center;
+  gap: 20px;
+  color: var(--clr-violet-100);
+  height: 33px;
+  border-radius: 4px;
+  width: 211px;
+  padding: 3px 10px;
+}
+.item.active {
+  background: #d9daf3;
+  color: var(--clr-red-100);
+  grid-template-columns: 25px auto 8px;
+  gap: 0;
+}
+.item.active p {
+  margin-left: 20px;
+  margin-right: auto;
+}
+/* .item:hover {
+  color: var(--clr-violet-200);
+} */
+.item svg {
+  color: currentColor;
+}
+.item p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 99.5%;
+  color: currentColor;
+  /* text-transform: capitalize; */
+}
+.signOut {
+  /* margin-top: auto; */
+  /* margin-bottom: 15%; */
+}

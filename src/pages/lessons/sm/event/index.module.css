@@ -1,0 +1,60 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  background: #d9daf3;
+  border-radius: 3px;
+  height: 33px;
+  padding: 8px 8px;
+  align-items: center;
+}
+
+.textItems {
+  grid-template-columns: 0.4fr 1fr;
+  color: #2d224c !important;
+  @apply grid gap-1;
+}
+
+.noReport {
+  background: #ff8c8c;
+}
+.reportComplete {
+  background: #74dfac;
+}
+.current {
+  background: #8065c9;
+}
+.future {
+  background: #d9daf3;
+}
+
+.unfilled {
+  border: 0.0625rem solid #ffffff;
+  background: none;
+}
+
+.time {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 124%;
+  color: #2d224c !important;
+  text-align: left;
+
+  /* width: fit-content; */
+  text-overflow: ellipsis;
+}
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 124%;
+  color: #2d224c !important;
+  width: 80%;
+  height: 16px;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

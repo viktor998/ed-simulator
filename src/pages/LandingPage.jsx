@@ -51,6 +51,9 @@ const LandingPage = () => {
         },
         "scrollbar-width": "none",
         ["@media (max-width:1047px)"]: {
+          gridTemplateRows: "1fr 8fr 8fr",
+        },
+        ["@media (max-width:763px)"]: {
           gap: "2vh",
           gridTemplateRows: "1fr 3fr 5fr",
         },
@@ -85,8 +88,8 @@ const LandingPage = () => {
             height: "calc(270px + 5vh)",
             margin: "auto",
             ["@media (max-width:1047px)"]: {
-              width: "calc(140px + 1vw)",
-              height: "calc(170px + 0.5vh)",
+              width: "calc(120px + 1vw)",
+              height: "calc(160px + 5vh)",
             },
           }}
         >
@@ -98,7 +101,7 @@ const LandingPage = () => {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            my: "1rem",
+            // my: "1rem",
             ["@media (max-width:1047px)"]: {
               gap: "0.5rem",
             },
@@ -112,7 +115,7 @@ const LandingPage = () => {
               fontWeight: "700",
               ["@media (max-width:1047px)"]: {
                 textAlign: "center",
-                fontSize: "calc(18px + 1vw)",
+                fontSize: "calc(18px + 1vh)",
                 // maxWidth: "39",
               },
             }}
@@ -143,6 +146,8 @@ const LandingPage = () => {
           alignItems: "center",
           justifyContent: "center",
           gap: "1rem",
+          paddingTop: "4vh",
+          minHeight: "190px",
         }}
         className="bottom"
       >

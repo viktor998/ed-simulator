@@ -1,40 +1,10 @@
-import { KeyRounded, Visibility, VisibilityOff } from "@mui/icons-material";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import {
-  Box,
-  Button,
-  FormHelperText,
-  Grid,
-  IconButton,
-  Input,
-  InputAdornment,
-  Typography,
-  useMediaQuery,
-  CircularProgress,
-} from "@mui/material";
-import React, { useState } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Box, Button, Typography } from "@mui/material";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import logoEdu from "../assets/img/logoEdu.svg";
 import Header from "../components/Header";
-import useMyContext from "../hooks/useMyContext";
-import { Stack } from "@mui/system";
-import { CaImage, CaKey, CaUser } from "../components/Icons";
-import Footer from "../components/Footer";
-
-/* const text = {
-  english: {
-    headerTitle: "Hey 👋 Good to see you!",
-    labelEmail: "Email address",
-    buttonLogin: "LOG IN",
-    buttonReset: "Reset your password",
-  },
-  italiano: {
-    headerTitle: "Ciao 👋 Piacere di vederti!",
-    labelEmail: "Indirizzo Email",
-    buttonLogin: "ENTRA",
-    buttonReset: "Recupera la password",
-  },
-}; */
+import { BritishFlag, CaImage } from "../components/Icons";
 
 const LandingPage = () => {
   const navigate = useNavigate();
@@ -50,12 +20,6 @@ const LandingPage = () => {
           width: "0em",
         },
         "scrollbar-width": "none",
-        // ["@media (max-width:1047px)"]: {
-        //   gridTemplateRows: "1fr 8fr 8fr",
-        // },
-        // ["@media (max-width:763px)"]: {
-        //   gridTemplateRows: "10vh 50vh 40vh",
-        // },
       }}
       className="overflow-y-hidden"
     >
@@ -135,9 +99,12 @@ const LandingPage = () => {
             Qual è il tuo livello di <br className="lg:hidden" /> inglese? 🔍
           </Typography>
           <Typography
+            component={"p"}
             color="secondary"
             sx={{
               fontSize: "calc(16px + 0.5vw)",
+              display: "flex",
+              flexDirection: "row",
               ["@media (max-width:1047px)"]: {
                 textAlign: "center",
                 fontSize: "calc(14px + 0.5vw)",
@@ -145,7 +112,8 @@ const LandingPage = () => {
               },
             }}
           >
-            C1, B2 o Shish? 🇬🇧{" "}
+            C1, B2 o Shish?&nbsp;
+            <BritishFlag />
           </Typography>
         </Box>
       </Box>

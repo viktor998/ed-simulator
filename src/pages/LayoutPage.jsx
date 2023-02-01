@@ -1,8 +1,7 @@
 import React from "react";
-
-import { Outlet, NavLink } from "react-router-dom";
-import useAuth from "../hooks/useMyContext";
 import { useEffect } from "react";
+import { Outlet } from "react-router-dom";
+
 const LayoutPage = () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
@@ -14,22 +13,6 @@ const LayoutPage = () => {
   }, []);
   return (
     <>
-      {/* <nav>
-        <NavLink to="/">Home</NavLink>
-
-        <NavLink to="/register">Register</NavLink>
-
-        <NavLink to="/payment">Payment</NavLink>
-
-        <NavLink to="/dashboard">Dashboard</NavLink>
-
-        {token && (
-          <button type="button" onClick={onLogout}>
-            Sign Out
-          </button>
-        )}
-      </nav> */}
-
       <Outlet />
     </>
   );

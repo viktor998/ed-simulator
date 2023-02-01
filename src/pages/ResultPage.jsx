@@ -60,11 +60,12 @@ const ResultPage = () => {
           width: "0em",
         },
         "scrollbar-width": "none",
+        ["@media (min-width:763px) and (max-height:1080px)"]: {
+          gridTemplateRows: "20vh 45vh 35vh",
+        },
         ["@media (max-width:1047px)"]: {
           gap: "2vh",
           gridTemplateRows: "1fr 5fr 5fr",
-          // paddingLeft: "40vw",
-          // paddingRight: "40vw",
         },
       }}
       className="overflow-y-hidden"
@@ -95,8 +96,8 @@ const ResultPage = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          justifyContent: "end",
-          paddingBottom: "8vh",
+          justifyContent: "center",
+          // paddingBottom: "8%",
         }}
       >
         <Box
@@ -155,7 +156,7 @@ const ResultPage = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "start",
+          justifyContent: "center",
           gap: "1rem",
         }}
       >

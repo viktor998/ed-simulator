@@ -93,9 +93,13 @@ const LandingPage = () => {
             display: "flex",
             justifyContent: "center",
             flexDirection: "row",
-            width: "calc(200px +  10vw)",
+            width: "calc(140px +  10vw)",
             height: "calc(200px + 10vh)",
             margin: "auto",
+            ["@media (min-width:763px) and (max-height:1080px)"]: {
+              height: "calc(100px + 15vh)",
+              width: "calc(90px +  10vw)",
+            },
             ["@media (max-width:1047px)"]: {
               width: "calc(120px + 1vw)",
               height: "calc(160px + 5vh)",

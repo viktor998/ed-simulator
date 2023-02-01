@@ -62,13 +62,14 @@ const LandingPage = () => {
     >
       <Header
         sx={{
-          ["@media (max-width:1047px)"]: {
-            "& nav": {
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            },
+          ["@media (max-height:963px)"]: {
+            paddingBottom: "10vh",
+          },
+          "& nav": {
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
           },
         }}
         logo={true}
@@ -133,7 +134,8 @@ const LandingPage = () => {
               },
             }}
           >
-            C1, B2 o Shish? 🇬🇧          </Typography>
+            C1, B2 o Shish? 🇬🇧{" "}
+          </Typography>
         </Box>
       </Box>
 
@@ -147,6 +149,9 @@ const LandingPage = () => {
           gap: "1rem",
           paddingTop: "4vh",
           minHeight: "190px",
+          ["@media (max-height:763px)"]: {
+            paddingTop: "4vh",
+          },
         }}
         className="bottom"
       >
@@ -175,7 +180,7 @@ const LandingPage = () => {
           }}
           color="green"
           variant="contained"
-            size="large"
+          size="large"
           onClick={() => navigate("/quiz")}
         >
           INIZIA IL TEST

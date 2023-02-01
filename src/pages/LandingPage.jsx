@@ -44,19 +44,18 @@ const LandingPage = () => {
         display: "grid",
         backgroundColor: "#d9daf3",
         gridTemplateColumns: "1fr",
-        gridTemplateRows: "1fr 5fr 6fr",
+        gridTemplateRows: "15vh 45vh 40vh",
         height: "calc(var(--vh, 1vh) * 100)",
         "&::-webkit-scrollbar": {
           width: "0em",
         },
         "scrollbar-width": "none",
-        ["@media (max-width:1047px)"]: {
-          gridTemplateRows: "1fr 8fr 8fr",
-        },
-        ["@media (max-width:763px)"]: {
-          gap: "2vh",
-          gridTemplateRows: "1fr 3fr 5fr",
-        },
+        // ["@media (max-width:1047px)"]: {
+        //   gridTemplateRows: "1fr 8fr 8fr",
+        // },
+        // ["@media (max-width:763px)"]: {
+        //   gridTemplateRows: "10vh 50vh 40vh",
+        // },
       }}
       className="overflow-y-hidden"
     >
@@ -96,13 +95,13 @@ const LandingPage = () => {
             width: "calc(140px +  10vw)",
             height: "calc(200px + 10vh)",
             margin: "auto",
-            ["@media (min-width:763px) and (max-height:1080px)"]: {
+            ["@media (min-width:1024px) and (max-height:1080px)"]: {
               height: "calc(100px + 15vh)",
               width: "calc(90px +  10vw)",
             },
             ["@media (max-width:1047px)"]: {
-              width: "calc(120px + 1vw)",
-              height: "calc(160px + 5vh)",
+              width: "calc(260px + 15vw)",
+              height: "calc(100px + 12vh)",
             },
           }}
         >

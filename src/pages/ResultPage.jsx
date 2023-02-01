@@ -54,18 +54,18 @@ const ResultPage = () => {
         display: "grid",
         backgroundColor: "#2D224C",
         gridTemplateColumns: "1fr",
-        gridTemplateRows: "1fr 6fr 6fr",
+        gridTemplateRows: "15vh 45vh 35vh",
         height: "calc(var(--vh, 1vh) * 100)",
         "&::-webkit-scrollbar": {
           width: "0em",
         },
         "scrollbar-width": "none",
         ["@media (min-width:763px) and (max-height:1080px)"]: {
-          gridTemplateRows: "20vh 45vh 35vh",
+          gridTemplateRows: "12vh 45vh 38vh",
         },
         ["@media (max-width:1047px)"]: {
-          gap: "2vh",
-          gridTemplateRows: "1fr 5fr 5fr",
+          // gap: "2vh",
+          gridTemplateRows: "15vh 35vh 50vh",
         },
       }}
       className="overflow-y-hidden"

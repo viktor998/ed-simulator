@@ -62,10 +62,10 @@ const QuizPage = () => {
     <Box
       sx={{
         display: "grid",
-        ["@media (min-width:1047px)"]: {
-          gridTemplateRows: "3fr 8fr",
-        },
-        gridTemplateRows: "3fr 8fr",
+        // ["@media (min-width:1047px)"]: {
+        //   gridTemplateRows: "3fr 8fr",
+        // },
+        gridTemplateRows: "25vh 75vh",
         height: "calc(var(--vh, 1vh) * 100)",
         overflowX: "hidden",
       }}

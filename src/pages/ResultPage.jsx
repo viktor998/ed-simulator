@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import { CaImage } from "../components/Icons";
 
+import logoEduBianco from "../assets/img/logoEduBianco.svg";
 const ResultPage = () => {
   function ArrowsSm(props) {
     return (
@@ -68,20 +69,28 @@ const ResultPage = () => {
       }}
       className="overflow-y-hidden"
     >
-      <Header
-        white={true}
-        sx={{
-          ["@media (max-width:1047px)"]: {
-            "& nav": {
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "center",
-              alignItems: "center",
+      <Header white={true} form={true}>
+        <Box
+          sx={{
+            width: "fit-content",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "0 auto 10vh auto",
+            "& img": {
+              width: "94px",
+              height: "40x",
+              ["@media (min-width:1047px)"]: {
+                width: "124px",
+                height: "53px",
+              },
             },
-          },
-        }}
-        logo={true}
-      />
+          }}
+        >
+          <img src={logoEduBianco} alt="Logo Edusogno" />
+        </Box>
+      </Header>
       <Box
         sx={{
           display: "flex",

@@ -78,7 +78,7 @@ const QuizPage = () => {
             flexDirection: "row",
             justifyContent: "center",
             alignItems: "center",
-            margin: "auto auto 10vh auto",
+            margin: "0 auto 10vh auto",
             "& img": {
               width: "94px",
               height: "40x",

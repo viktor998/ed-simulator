@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-
+import logoEdu from "../assets/img/logoEdu.svg";
 import Header from "../components/Header";
 import useMyContext from "../hooks/useMyContext";
 import { Stack } from "@mui/system";
@@ -60,20 +60,28 @@ const LandingPage = () => {
       }}
       className="overflow-y-hidden"
     >
-      <Header
-        sx={{
-          ["@media (max-height:963px) and (min-width:763px)"]: {
-            paddingBottom: "10vh",
-          },
-          "& nav": {
+      <Header form={false}>
+        <Box
+          sx={{
+            width: "fit-content",
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
             alignItems: "center",
-          },
-        }}
-        logo={true}
-      />
+            margin: "auto auto 10vh auto",
+            "& img": {
+              width: "94px",
+              height: "40x",
+              ["@media (min-width:1047px)"]: {
+                width: "124px",
+                height: "53px",
+              },
+            },
+          }}
+        >
+          <img src={logoEdu} alt="Logo Edusogno" />
+        </Box>
+      </Header>
       <Box
         sx={{
           display: "flex",

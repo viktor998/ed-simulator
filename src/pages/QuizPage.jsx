@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
-import { Box, Button, Typography, useMediaQuery} from "@mui/material";
+import { Box, Button, Typography, useMediaQuery } from "@mui/material";
 import dayjs from "dayjs";
 import customParseFormat from "dayjs/plugin/customParseFormat";
 import React, { useCallback, useEffect, useState } from "react";
@@ -7,8 +7,15 @@ import { useNavigate } from "react-router-dom";
 
 import logoEduBianco from "../assets/img/logoEduBianco.svg";
 import Header from "../components/Header";
-
-dayjs.extend(customParseFormat);
+import {
+  ArrowBackIosRounded,
+  ArrowForwardIosRounded,
+  CheckCircleRounded,
+  ExpandMore,
+  HighlightOff,
+  Visibility,
+  VisibilityOff,
+} from "@mui/icons-material";
 
 const TOMTOM_KEY = import.meta.env.VITE_TOMTOM_API;
 document.title = "Form Edusogno";
@@ -88,8 +95,11 @@ const QuizPage = () => {
         <Box
           className={`absolute right-0 top-0 bg-white nascondi transition-all`}
           sx={{
-          width:`${100 - ((activeQuestion+0.01) / (questions.length - 1)) * 100}%`,
-          transition:"all 2s"}}
+            width: `${
+              100 - ((activeQuestion + 0.01) / (questions.length - 1)) * 100
+            }%`,
+            transition: "all 2s",
+          }}
         ></Box>
       </Header>
 
@@ -125,18 +135,19 @@ const QuizPage = () => {
               gridTemplateColumns: "1fr",
               width: "90%",
               gap: "1rem",
-               "& button": {
-               
-fontWeight:"400",
-maxHeight:"56px"
-                },
+
+              "& button": {
+                fontWeight: "400",
+                maxHeight: "56px",
+              },
               ["@media (min-width:763px)"]: {
                 gridTemplateColumns: "1fr 1fr 1fr 1fr",
+                marginTop: "10vh",
                 "& button": {
                   width: "100%",
                   minWidth: "174px",
                   textTransform: "none",
-                  fontSize:"24px"
+                  fontSize: "24px",
                 },
               },
               ["@media (min-width:1047px)"]: {
@@ -178,50 +189,16 @@ maxHeight:"56px"
             sx={{
               display: "flex",
               justifyContent: "center",
-              gap: "1rem",
+              gap: "2rem",
+              width: "100%",
               "& button": {
-                height: "fit-content",
                 width: "254px",
-                display: "flex",
-                flexDirection: "row",
-                position: "relative",
               },
-              "& button:first-of-type": {
-                height: "fit-content",
-                width: "254px",
-                display: "flex",
-                flexDirection: "row",
-                position: "relative",
-              },
-
               ["@media (max-width:1047px)"]: {
                 "& button": {
                   aspectRatio: "1/1",
                   borderRadius: "50%!important",
-                  padding: "0",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: "64px",
-                  "& svg": {
-                    position: "relative",
-                    left: "unset",
-                    right: "unset",
-                  },
-                },
-                "& button:first-of-type": {
-                  aspectRatio: "1/1",
-                  borderRadius: "50%!important",
-                  padding: "0",
-                  width: "64px",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  "& svg": {
-                    position: "relative",
-                    right: "unset",
-                    left: "unset",
-                  },
+                  width: "initial",
                 },
               },
             }}
@@ -230,19 +207,13 @@ maxHeight:"56px"
               <Button
                 variant="contained"
                 color="buttonBack"
-                  size="large"
+                size="large"
+                // sx={{ }}
                 onClick={() => back()}
               >
-                <ChevronLeft
+                <ArrowBackIosRounded
+                  fontSize={smUp ? "small" : "medium"}
                   className="lg:absolute lg:left-4"
-                  sx={{
-                    width: "28px",
-                    height: "28px",
-                    ["@media (max-width:1047px)"]: {
-                      width: "24px",
-                      height: "24px",
-                    },
-                  }}
                 />
                 {!smUp && <span>back</span>}
               </Button>
@@ -251,20 +222,13 @@ maxHeight:"56px"
               disabled={!Boolean(answers[activeQuestion])}
               variant="contained"
               color="button"
-                size="large"
+              size="large"
               onClick={() => next()}
             >
               {!smUp && <span>Next</span>}
-              <ChevronRight
+              <ArrowForwardIosRounded
                 className="lg:absolute lg:right-4"
-                sx={{
-                  width: "28px",
-                  height: "28px",
-                  ["@media (max-width:1047px)"]: {
-                      width: "24px",
-                      height: "24px",
-                    },
-                }}
+                fontSize={smUp ? "small" : "medium"}
               />
             </Button>
           </Box>

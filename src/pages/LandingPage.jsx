@@ -62,7 +62,7 @@ const LandingPage = () => {
     >
       <Header
         sx={{
-          ["@media (max-height:963px)"]: {
+          ["@media (max-height:963px) and (min-width:763px)"]: {
             paddingBottom: "10vh",
           },
           "& nav": {

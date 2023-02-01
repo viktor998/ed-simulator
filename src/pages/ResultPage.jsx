@@ -87,7 +87,7 @@ const ResultPage = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "end",
-          paddingBottom:"8vh"
+          paddingBottom: "8vh",
         }}
       >
         <Box
@@ -106,7 +106,7 @@ const ResultPage = () => {
             component={"p"}
             sx={{
               fontSize: "calc(28px + 1vw)",
-              fontWeight: "700",
+              fontWeight: "600",
               color: "#ffffff",
               textAlign: "center",
               ["@media (max-width:1047px)"]: {
@@ -135,7 +135,7 @@ const ResultPage = () => {
             }}
           >
             Purtroppo tramite questo test possiamo solo darti una stima del tuo
-            livello di grammatica che è intorno ad un <br/> <b>[LIVELLO]</b>
+            livello di grammatica che è intorno ad un <br /> <b>[LIVELLO]</b>
           </Typography>
         </Box>
       </Box>
@@ -176,16 +176,15 @@ const ResultPage = () => {
               maxWidth: "418px",
               width: "100%",
               boxShadow: "0px 0px 30px #D4145A",
-              height:"10vh",
-                              fontSize:"calc(32px + 0.5vh)!important",
+              height: "10vh",
+              fontSize: "calc(32px + 0.5vh)!important",
               // color: "#31602A!important",
               ["@media (max-width:763px)"]: {
                 maxWidth: "75%",
-                 fontSize:"calc(16px + 0.5vh)!important",
-
+                fontSize: "calc(16px + 0.5vh)!important",
               },
             }}
-              size="large"
+            size="large"
             color="button"
             variant="contained"
           >

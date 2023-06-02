@@ -1,0 +1,33 @@
+.root{
+display: grid;
+grid-template-rows: 15% 65% 20%;
+min-height: 500px;
+height:calc(99.9999 * var(--vh,1vh))
+}
+.header{
+display: flex;
+flex-direction: row;
+/* align-items: center; */
+justify-content: space-between;
+/* padding: 5px min(10%,2rem); */
+/* padding:var(--logo-position-top) var(--logo-position-left) 1rem  var(--logo-position-left); */
+background: #2D224C;
+@apply pt-8 lg:pt-[3rem] px-[1.5rem] pb-2;
+}
+.footer{
+background: #D9DAF3;
+flex-direction: column;
+display: flex;
+justify-content: center;
+align-items: center;
+gap:1rem;
+
+}
+.footer .prompt{
+    font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 99.5%;
+text-align: center;
+color: #2D224C;
+}

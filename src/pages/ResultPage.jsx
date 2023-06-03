@@ -14,7 +14,7 @@ function ResultsPage(props) {
         <EdFinish className="w-2/5 lg:w-[416px]" />
         <div className="text-base lg:text-2xl text-center mt-4 flex flex-col gap-6 mb-4">
           <p className="text-secondary font-semibold">
-            It's time to improve your English!
+            Your level will be assessed by our team.
           </p>
           <p className="text-primary px-4">
             Go to the login and improve it when your course starts.

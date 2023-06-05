@@ -8,15 +8,15 @@ function ResultsPage(props) {
     <ContentLayout>
       <div
         data-content
-        className="flex flex-col items-center justify-center gap-8 max-w-[620px] mx-auto"
+        className="flex flex-col items-center justify-center py-4  gap-8 max-w-[620px] mx-auto"
       >
         <Header> Great! Thanks for taking the time to do the test </Header>
         <EdFinish className="w-2/5 lg:w-[416px]" />
-        <div className="text-base lg:text-2xl text-center mt-4 flex flex-col gap-6 mb-4">
+        <div className="text-base lg:text-2xl text-center mt-4 flex flex-col mb-4">
           <p className="text-secondary font-semibold">
             Your level will be assessed by our team.
           </p>
-          <p className="text-primary px-4">
+          <p className="text-primary px-4 mt-6">
             Go to the login and improve it when your course starts.
           </p>
           <p className="text-primary font-semibold">

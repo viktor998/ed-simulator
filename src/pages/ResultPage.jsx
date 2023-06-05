@@ -2,15 +2,15 @@ import Button from "@mui/material/Button";
 import Header from "./common/Header";
 import Footer from "./common/Footer";
 import { EdFinish } from "@components/Illustration";
-import ContentLayout from "./common/content-layout";
+
 function ResultsPage(props) {
   return (
-    <ContentLayout>
+    <>
       <div
         data-content
-        className="flex flex-col items-center justify-center py-4 gap-8 max-w-[620px] mx-auto"
+        className="flex flex-col items-center justify-center py-4 gap-8 max-w-[720px] mx-auto"
       >
-        <Header> Great! Thanks for taking the time to do the test </Header>
+        <Header> Great! Thanks for taking the time</Header>
         <EdFinish className="w-2/5 lg:w-[216px]" />
         <div className="text-base lg:text-2xl text-center mt-4 flex flex-col mb-4">
           <p className="text-secondary font-semibold">
@@ -19,7 +19,7 @@ function ResultsPage(props) {
           <p className="text-primary px-4">
             Go to the login and improve it when your course starts.
           </p>
-          <p className="text-primary font-semibold">
+          <p className="text-primary font-semibold mt-6">
             We hope you will enjoy the course!
           </p>
         </div>
@@ -55,7 +55,7 @@ function ResultsPage(props) {
           // </div>
         }
       />
-    </ContentLayout>
+    </>
   );
 }
 

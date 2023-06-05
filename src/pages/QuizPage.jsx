@@ -55,85 +55,82 @@ const QuizPage = () => {
   };
 
   return (
-    <ContentLayout>
-      <ContentView
-        disabled={!Boolean(answers[activeQuestion])}
-        onClick={() => {
-          next();
+    <ContentView
+      disabled={!Boolean(answers[activeQuestion])}
+      onClick={() => {
+        next();
+      }}
+      onBack={() => back()}
+      progress={(activeQuestion + 0.01) / (questions.length - 1)}
+    >
+      <Typography
+        color={"primary"}
+        sx={{
+          fontSize: "calc(22px + 1vw)",
+          textAlign: "center",
+          // ["@media (min-width:1047px)"]: {
+          //   marginTop: "auto",
+          //   textAlign: "left",
+          // },
         }}
-        onBack={() => back()}
-        progress={(activeQuestion + 0.01) / (questions.length - 1)}
       >
-        <Typography
-          color={"primary"}
-          sx={{
-            fontSize: "calc(22px + 1vw)",
-            textAlign: "center",
-            // ["@media (min-width:1047px)"]: {
-            //   marginTop: "auto",
-            //   textAlign: "left",
-            // },
-          }}
-        >
-          {questions[activeQuestion].question}
-        </Typography>
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: "1fr",
-            width: "90%",
-            gap: "1rem",
+        {questions[activeQuestion].question}
+      </Typography>
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: "1fr",
+          width: "90%",
+          gap: "1rem",
 
+          "& button": {
+            fontWeight: "400",
+            maxHeight: "56px",
+          },
+          ["@media (min-width:763px)"]: {
+            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            marginTop: "10vh",
             "& button": {
-              fontWeight: "400",
-              maxHeight: "56px",
+              width: "100%",
+              minWidth: "174px",
+              textTransform: "none",
+              fontSize: "24px",
             },
-            ["@media (min-width:763px)"]: {
-              gridTemplateColumns: "1fr 1fr 1fr 1fr",
-              marginTop: "10vh",
-              "& button": {
-                width: "100%",
-                minWidth: "174px",
-                textTransform: "none",
-                fontSize: "24px",
-              },
+          },
+          ["@media (min-width:1047px)"]: {
+            "& button": {
+              width: "100%",
+              minWidth: "calc(200px + 5vw)",
+              textTransform: "none",
             },
-            ["@media (min-width:1047px)"]: {
-              "& button": {
-                width: "100%",
-                minWidth: "calc(200px + 5vw)",
-                textTransform: "none",
-              },
+          },
+          ["@media (max-width:763px)"]: {
+            "& button": {
+              minWidth: "90vw",
+              textTransform: "none",
             },
-            ["@media (max-width:763px)"]: {
-              "& button": {
-                minWidth: "90vw",
-                textTransform: "none",
-              },
-            },
-          }}
-        >
-          {questions[activeQuestion].options.map((r) => (
-            <Button
-              size="large"
-              variant="contained"
-              disableElevation
-              color={r === answers[activeQuestion] ? "primary" : "buttonBack"}
-              onClick={() => {
-                selectAnswer(r);
-              }}
-              sx={{
-                color:
-                  r === answers[activeQuestion]
-                    ? "#ffffff"
-                    : "#2D224C!important",
-              }}
-            >
-              {r}
-            </Button>
-          ))}
-        </Box>
-        {/* <Box
+          },
+        }}
+      >
+        {questions[activeQuestion].options.map((r) => (
+          <Button
+            size="large"
+            variant="contained"
+            disableElevation
+            color={r === answers[activeQuestion] ? "primary" : "buttonBack"}
+            onClick={() => {
+              selectAnswer(r);
+            }}
+            sx={{
+              color:
+                r === answers[activeQuestion] ? "#ffffff" : "#2D224C!important",
+            }}
+          >
+            {r}
+          </Button>
+        ))}
+      </Box>
+      {/* <Box
           sx={{
             display: "flex",
             justifyContent: "center",
@@ -166,7 +163,7 @@ const QuizPage = () => {
               {!smUp && <span>back</span>}
             </Button>
           )} */}
-        {/* <Button
+      {/* <Button
           disabled={!Boolean(answers[activeQuestion])}
           variant="contained"
           color="button"
@@ -179,9 +176,8 @@ const QuizPage = () => {
             fontSize={smUp ? "small" : "medium"}
           />
         </Button> */}
-        {/* </Box> */}
-      </ContentView>
-    </ContentLayout>
+      {/* </Box> */}
+    </ContentView>
   );
 };
 

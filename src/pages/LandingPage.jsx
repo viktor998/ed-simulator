@@ -10,7 +10,7 @@ const LandingPage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="flex flex-col items-center justify-start gap-6 py-4 max-w-[720px] mx-auto">
+      <div className="flex flex-col items-center justify-start gap-6 py-4 max-w-[720px] mx-auto  px-[min(10%,2rem)]">
         <Header>What is your English level?</Header>
         <p className="text-primary font-[Poppins] lg:text-[20px] mt-2 !leading-[99.5%] text-sm flex flex-row items-center">
           C1, B2 o Shish?&nbsp;

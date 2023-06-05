@@ -11,7 +11,7 @@ function ResultsPage(props) {
         className="flex flex-col items-center justify-start py-4 gap-8 max-w-[720px] mx-auto"
       >
         <Header> Great! Thanks for taking the time</Header>
-        <EdFinish className="w-2/5 lg:w-[216px]" />
+        <EdFinish className="w-8/12 lg:w-[216px]" />
         <div className="text-base lg:text-2xl text-center mt-4 flex flex-col mb-4">
           <p className="text-secondary font-semibold">
             Your level will be assessed by our team.

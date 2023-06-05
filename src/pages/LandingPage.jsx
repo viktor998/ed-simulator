@@ -34,7 +34,7 @@ const LandingPage = () => {
             },
           }}
         > */}
-        <CaImage className="w-2/5 lg:w-[250px]" />
+        <CaImage className="w-8/12 lg:w-[250px]" />
         {/* </Box> */}
       </div>
       <Footer

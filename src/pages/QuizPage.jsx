@@ -68,10 +68,9 @@ const QuizPage = () => {
         sx={{
           fontSize: "calc(22px + 1vw)",
           textAlign: "center",
-          // ["@media (min-width:1047px)"]: {
-          //   marginTop: "auto",
-          //   textAlign: "left",
-          // },
+          ["@media (max-width:763px)"]: {
+            minHeight: "80px",
+          },
         }}
       >
         {questions[activeQuestion].question}

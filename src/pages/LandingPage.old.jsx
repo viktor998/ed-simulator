@@ -162,7 +162,7 @@ const LandingPage = () => {
           size="large"
           onClick={() => navigate("/quiz")}
         >
-          INIZIA IL TEST
+          INIZIA IL TEST INIZIA IL TEST
         </Button>
       </Box>
     </Box>

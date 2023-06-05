@@ -8,7 +8,7 @@ function ResultsPage(props) {
     <>
       <div
         data-content
-        className="flex flex-col items-center justify-center py-4 gap-8 max-w-[720px] mx-auto"
+        className="flex flex-col items-center justify-start py-4 gap-8 max-w-[720px] mx-auto"
       >
         <Header> Great! Thanks for taking the time</Header>
         <EdFinish className="w-2/5 lg:w-[216px]" />

@@ -10,13 +10,13 @@ const LandingPage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="flex flex-col items-center justify-center py-4 gap-8 max-w-[720px] mx-auto">
+      <div className="flex flex-col items-center justify-start gap-6 py-4 max-w-[720px] mx-auto">
         <Header>What is your English level?</Header>
-        <p className="text-primary font-[Poppins] lg:text-[20px] !leading-[99.5%] text-sm flex flex-row items-center">
+        <p className="text-primary font-[Poppins] lg:text-[20px] mt-2 !leading-[99.5%] text-sm flex flex-row items-center">
           C1, B2 o Shish?&nbsp;
           <BritishFlag />
         </p>
-        <Box
+        {/* <Box
           sx={{
             display: "flex",
             justifyContent: "center",
@@ -33,9 +33,9 @@ const LandingPage = () => {
               height: "calc(100px + 12vh)",
             },
           }}
-        >
-          <CaImage />
-        </Box>
+        > */}
+        <CaImage className="w-2/5 lg:w-[250px]" />
+        {/* </Box> */}
       </div>
       <Footer
         prompt={

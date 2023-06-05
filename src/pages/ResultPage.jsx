@@ -10,7 +10,7 @@ function ResultsPage(props) {
         data-content
         className="flex flex-col items-center justify-center gap-8 max-w-[620px] mx-auto"
       >
-        <Header> Great! Your level is [Level] </Header>
+        <Header> Great! Thanks for taking the time to do the test </Header>
         <EdFinish className="w-2/5 lg:w-[416px]" />
         <div className="text-base lg:text-2xl text-center mt-4 flex flex-col gap-6 mb-4">
           <p className="text-secondary font-semibold">
@@ -19,7 +19,9 @@ function ResultsPage(props) {
           <p className="text-primary px-4">
             Go to the login and improve it when your course starts.
           </p>
-          <p className="text-primary font-semibold"> We hope you like it!</p>
+          <p className="text-primary font-semibold">
+            We hope you will enjoy the course!
+          </p>
         </div>
       </div>
       <Footer

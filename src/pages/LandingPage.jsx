@@ -146,7 +146,7 @@ const LandingPage = () => {
             },
           }}
         >
-          Ci vogliono solo <b>6 minuti</b>
+          Ci vorranno circa <b>20 minuti </b>
         </Typography>
         <Button
           sx={{

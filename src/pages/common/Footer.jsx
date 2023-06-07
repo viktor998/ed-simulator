@@ -10,7 +10,7 @@ function Footer(props) {
       >
         <p
           className={
-            "not-italic font-normal text-lg lg:text-2xl text-center text-primary w-full px-1"
+            "not-italic font-normal text-lg md:text-2xl text-center text-primary w-full px-1"
           }
         >
           {props?.prompt}

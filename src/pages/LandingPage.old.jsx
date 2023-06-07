@@ -71,6 +71,26 @@ const LandingPage = () => {
         >
           <CaImage />
         </Box>
+        {/* <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "row",
+            width: "calc(140px +  10vw)",
+            height: "calc(200px + 10vh)",
+            margin: "auto",
+            ["@media (min-width:1024px) and (max-height:1080px)"]: {
+              height: "calc(100px + 15vh)",
+              width: "calc(90px +  10vw)",
+            },
+            ["@media (max-width:1047px)"]: {
+              width: "calc(260px + 15vw)",
+              height: "calc(100px + 12vh)",
+            },
+          }}
+        >
+          <CaImage />
+        </Box> */}
         <Box
           sx={{
             display: "flex",

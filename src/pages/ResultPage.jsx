@@ -17,7 +17,7 @@ function ResultsPage(props) {
             Your level will be assessed by our team
           </p>
           <p className="text-primary px-4">
-            Go to the login and improve it when your course starts
+            Go to login and improve it when your course starts
           </p>
           <p className="text-primary font-semibold mt-6">
             We hope you will enjoy the course!

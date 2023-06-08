@@ -31,7 +31,11 @@ const LandingPage = () => {
         </div>
       </div>
       <Footer
-        prompt={<></>}
+        prompt={
+          <>
+            It only takes <b>20 minutes</b>
+          </>
+        }
         button={
           <Button
             variant="contained"

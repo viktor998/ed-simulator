@@ -38,7 +38,7 @@ const LandingPage = () => {
             color="primary"
             size="large"
             className="lg:max-w-[599px] max-w-[90vw] w-full"
-            onClick={() => next && next()}
+            onClick={() => navigate("/quiz")}
           >
             get started
           </Button>

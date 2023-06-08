@@ -22,7 +22,7 @@ const LandingPage = () => {
         <div className="text-base md:text-2xl text-center mt-4 px-4">
           <p className="text-primary">
             Ensure that you are situated in a tranquil setting and have ample
-            time to complete the test.
+            time to complete the test
           </p>
           <p className="text-primary font-semibold mt-6">
             In the event of non-completion, you will be require to restart from

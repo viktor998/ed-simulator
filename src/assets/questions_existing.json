@@ -1,0 +1,1052 @@
+[
+  {
+    "question": "  _____ name is Jack. ",
+    "a": [
+      { "option": "Me", "correct": false },
+      { "option": "I", "correct": false },
+      { "option": "My", "correct": true }
+    ],
+    "options": ["Me", "I", "My"],
+    "correctAnswer": "My"
+  },
+  {
+    "question": "They _____ from Japan.",
+    "a": [
+      { "option": "is", "correct": false },
+      { "option": "are", "correct": true },
+      { "option": "do", "correct": false }
+    ],
+    "options": ["is", "are", "do"],
+    "correctAnswer": "are"
+  },
+  {
+    "question": "_____ are you from?",
+    "a": [
+      { "option": "What", "correct": false },
+      { "option": "Who", "correct": false },
+      { "option": "Where", "correct": true }
+    ],
+    "options": ["What", "Who", "Where"],
+    "correctAnswer": "Where"
+  },
+  {
+    "question": "What do you do? I'm _____ doctor.",
+    "a": [
+      { "option": "an", "correct": false },
+      { "option": "a", "correct": true },
+      { "option": "the", "correct": false }
+    ],
+    "options": ["an", "a", "the"],
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Peter _____ at eight o'clock.",
+    "a": [
+      { "option": "goes up", "correct": false },
+      { "option": "gets", "correct": false },
+      { "option": "gets up", "correct": true }
+    ],
+    "options": ["goes up", "gets", "gets up"],
+    "correctAnswer": "gets up"
+  },
+  {
+    "question": "_____ you like this movie?",
+    "a": [
+      { "option": "Are", "correct": false },
+      { "option": "Have", "correct": false },
+      { "option": "Do", "correct": true }
+    ],
+    "options": ["Are", "Have", "Do"],
+    "correctAnswer": "Do"
+  },
+  {
+    "question": "We _____ live in a loft.",
+    "a": [
+      { "option": "don't", "correct": true },
+      { "option": "hasn't", "correct": false },
+      { "option": "doesn't", "correct": false }
+    ],
+    "options": ["don't", "hasn't", "doesn't"],
+    "correctAnswer": "don't"
+  },
+  {
+    "question": "Wednesday, Thursday, Friday, _____",
+    "a": [
+      { "option": "Saturday", "correct": true },
+      { "option": "Tuesday", "correct": false },
+      { "option": "Monday", "correct": false }
+    ],
+    "options": ["Saturday", "Tuesday", "Monday"],
+    "correctAnswer": "Saturday"
+  },
+  {
+    "question": "_____ he play golf?",
+    "a": [
+      { "option": "Where", "correct": false },
+      { "option": "Does", "correct": true },
+      { "option": "Do", "correct": false }
+    ],
+    "options": ["Where", "Does", "Do"],
+    "correctAnswer": "Does"
+  },
+  {
+    "question": "Have you _____ a bicycle?",
+    "a": [
+      { "option": "any", "correct": false },
+      { "option": "have", "correct": false },
+      { "option": "got", "correct": true }
+    ],
+    "options": ["any", "have", "got"],
+    "correctAnswer": "got"
+  },
+  {
+    "question": "We don't have _____ sugar.",
+    "a": [
+      { "option": "a", "correct": false },
+      { "option": "any", "correct": true },
+      { "option": "got", "correct": false }
+    ],
+    "options": ["a", "any", "got"],
+    "correctAnswer": "any"
+  },
+  {
+    "question": "_____ some money here.",
+    "a": [
+      { "option": "They", "correct": false },
+      { "option": "There", "correct": false },
+      { "option": "There's", "correct": true }
+    ],
+    "options": ["They", "There", "There's"],
+    "correctAnswer": "There's"
+  },
+  {
+    "question": "We _____ got a sofa.",
+    "a": [
+      { "option": "haven't'", "correct": true },
+      { "option": "hasn't", "correct": false },
+      { "option": "don't", "correct": false }
+    ],
+    "options": ["haven't", "hasn't", "don't"],
+    "correctAnswer": "haven't"
+  },
+  {
+    "question": "Those glasses are very _____ .",
+    "a": [
+      { "option": "expensive", "correct": true },
+      { "option": "a lot", "correct": false },
+      { "option": "cost", "correct": false }
+    ],
+    "options": ["expensive", "a lot", "cost"],
+    "correctAnswer": "expensive"
+  },
+  {
+    "question": "Have you got a pencil? Yes, I _____ .",
+    "a": [
+      { "option": "am", "correct": false },
+      { "option": "have", "correct": true },
+      { "option": "got", "correct": false }
+    ],
+    "options": ["am", "have", "got"],
+    "correctAnswer": "have"
+  },
+  {
+    "question": "It is a busy, _____ city.",
+    "a": [
+      { "option": "traffic", "correct": false },
+      { "option": "quite", "correct": false },
+      { "option": "noisy", "correct": true }
+    ],
+    "options": ["traffic", "quite", "noisy"],
+    "correctAnswer": "noisy"
+  },
+  {
+    "question": "They _____ at home yesterday.",
+    "a": [
+      { "option": "was", "correct": false },
+      { "option": "are", "correct": false },
+      { "option": "were", "correct": true }
+    ],
+    "options": ["was", "are", "were"],
+    "correctAnswer": "were"
+  },
+  {
+    "question": "I _____ there for a long time.",
+    "a": [
+      { "option": "lived", "correct": true },
+      { "option": "living", "correct": false },
+      { "option": "live", "correct": false }
+    ],
+    "options": ["lived", "living", "live"],
+    "correctAnswer": "lived"
+  },
+  {
+    "question": "He didn't _____ sunglasses.",
+    "a": [
+      { "option": "put", "correct": false },
+      { "option": "wear", "correct": true },
+      { "option": "take", "correct": false }
+    ],
+    "options": ["put", "wear", "take"],
+    "correctAnswer": "wear"
+  },
+  {
+    "question": "The pub was _____ busy.",
+    "a": [
+      { "option": "very", "correct": true },
+      { "option": "a lot", "correct": false },
+      { "option": "many", "correct": false }
+    ],
+    "options": ["very", "a lot", "many"],
+    "correctAnswer": "very"
+  },
+  {
+    "question": "Do you like the blue _____ ?",
+    "a": [
+      { "option": "it", "correct": false },
+      { "option": "that", "correct": false },
+      { "option": "one", "correct": true }
+    ],
+    "options": ["it", "that", "one"],
+    "correctAnswer": "one"
+  },
+  {
+    "question": "He _____ to Portugal on business.",
+    "a": [
+      { "option": "go", "correct": false },
+      { "option": "goed", "correct": false },
+      { "option": "went", "correct": true }
+    ],
+    "options": ["go", "goed", "went"],
+    "correctAnswer": "went"
+  },
+  {
+    "question": "Yesterday was the _____ of May.",
+    "a": [
+      { "option": "third", "correct": true },
+      { "option": "three", "correct": false },
+      { "option": "day three", "correct": false }
+    ],
+    "options": ["third", "three", "day three"],
+    "correctAnswer": "third"
+  },
+  {
+    "question": "She's got _____ hair.",
+    "a": [
+      { "option": "dark, long", "correct": true },
+      { "option": "long and dark", "correct": false },
+      { "option": "long, dark", "correct": false }
+    ],
+    "options": ["dark, long", "long and dark", "long, dark"],
+    "correctAnswer": "dark, long"
+  },
+  {
+    "question": "I _____ play volleyball at the weekend.",
+    "a": [
+      { "option": "usually", "correct": true },
+      { "option": "use", "correct": false },
+      { "option": "usual", "correct": false }
+    ],
+    "options": ["usually", "use", "usual"],
+    "correctAnswer": "usually"
+  },
+  {
+    "question": "I _____ in an armchair at the moment.",
+    "a": [
+      { "option": "sitting", "correct": false },
+      { "option": "'m sitting", "correct": true },
+      { "option": "sit", "correct": false }
+    ],
+    "options": ["sitting", "'m sitting", "sit"],
+    "correctAnswer": "'m sitting"
+  },
+  {
+    "question": "My sister is older _____ me.",
+    "a": [
+      { "option": "then", "correct": false },
+      { "option": "that", "correct": false },
+      { "option": "than", "correct": true }
+    ],
+    "options": ["then", "that", "than"],
+    "correctAnswer": "than"
+  },
+  {
+    "question": "Their car is _____ biggest on the road.",
+    "a": [
+      { "option": "than", "correct": false },
+      { "option": "this", "correct": false },
+      { "option": "the", "correct": true }
+    ],
+    "options": ["than", "this", "the"],
+    "correctAnswer": "the"
+  },
+  {
+    "question": "It's the _____ interesting of his books.",
+    "a": [
+      { "option": "more", "correct": false },
+      { "option": "much", "correct": false },
+      { "option": "most", "correct": true }
+    ],
+    "options": ["more", "much", "most"],
+    "correctAnswer": "most"
+  },
+  {
+    "question": "The phone's ringing: _____ answer it.",
+    "a": [
+      { "option": "I'll", "correct": true },
+      { "option": "I", "correct": false },
+      { "option": "will", "correct": false }
+    ],
+    "options": ["I'll", "I", "will"],
+    "correctAnswer": "I'll"
+  },
+  {
+    "question": "Do you _____ classical or pop music?",
+    "a": [
+      { "option": "rather", "correct": false },
+      { "option": "prefer", "correct": true },
+      { "option": "more", "correct": false }
+    ],
+    "options": ["rather", "prefer", "more"],
+    "correctAnswer": "prefer"
+  },
+  {
+    "question": "He has _____ lunch.",
+    "a": [
+      { "option": "ate", "correct": false },
+      { "option": "eaten", "correct": true },
+      { "option": "eat", "correct": false }
+    ],
+    "options": ["ate", "eaten", "eat"],
+    "correctAnswer": "eaten"
+  },
+  {
+    "question": "The _____ have seen it before.",
+    "a": [
+      { "option": "childs", "correct": false },
+      { "option": "child", "correct": false },
+      { "option": "children", "correct": true }
+    ],
+    "options": ["childs", "child", "children"],
+    "correctAnswer": "children"
+  },
+  {
+    "question": "I've never met a singer _____ .",
+    "a": [
+      { "option": "before", "correct": true },
+      { "option": "already", "correct": false },
+      { "option": "after", "correct": false }
+    ],
+    "options": ["before", "already", "after"],
+    "correctAnswer": "before"
+  },
+  {
+    "question": "_____ is very good exercise.?",
+    "a": [
+      { "option": "Run", "correct": false },
+      { "option": "To run", "correct": false },
+      { "option": "Running", "correct": true }
+    ],
+    "options": ["Run", "To run", "Running"],
+    "correctAnswer": "Running"
+  },
+  {
+    "question": "Have you _____ been on a winter sports holiday?",
+    "a": [
+      { "option": "always", "correct": false },
+      { "option": "ever", "correct": true },
+      { "option": "soon", "correct": false }
+    ],
+    "options": ["always", "ever", "soon"],
+    "correctAnswer": "ever"
+  },
+  {
+    "question": "I can't _____ another language.",
+    "a": [
+      { "option": "speaking", "correct": false },
+      { "option": "speak", "correct": true },
+      { "option": "to speak", "correct": false }
+    ],
+    "options": ["speaking", "speak", "to speak"],
+    "correctAnswer": "speak"
+  },
+  {
+    "question": "They _____ pay for the hotel.",
+    "a": [
+      { "option": "haven't", "correct": false },
+      { "option": "don't have", "correct": false },
+      { "option": "don't have to", "correct": true }
+    ],
+    "options": ["haven't", "don't have", "don't have to"],
+    "correctAnswer": "don't have to"
+  },
+  {
+    "question": "_____ old is their house?",
+    "a": [
+      { "option": "What", "correct": false },
+      { "option": "When", "correct": false },
+      { "option": "How", "correct": true }
+    ],
+    "options": ["What", "When", "How"],
+    "correctAnswer": "How"
+  },
+  {
+    "question": "Are you _____ for two or three weeks?",
+    "a": [
+      { "option": "staying", "correct": true },
+      { "option": "stayed", "correct": false },
+      { "option": "stay", "correct": false }
+    ],
+    "options": ["staying", "stayed", "stay"],
+    "correctAnswer": "staying"
+  },
+  {
+    "question": " Stephen _____ to visit his family.",
+    "a": [
+      { "option": "will", "correct": false },
+      { "option": "going", "correct": false },
+      { "option": "is going", "correct": true }
+    ],
+    "options": ["will", "going", "is going"],
+    "correctAnswer": "is going"
+  },
+  {
+    "question": "I don't _____ waking up early.",
+    "a": [
+      { "option": "not like", "correct": false },
+      { "option": "want", "correct": false },
+      { "option": "enjoy", "correct": true }
+    ],
+    "options": ["not like", "want", "enjoy"],
+    "correctAnswer": "enjoy"
+  },
+  {
+    "question": "We _____ like to see the beach.",
+    "a": [
+      { "option": "would", "correct": true },
+      { "option": "will", "correct": false },
+      { "option": "are", "correct": false }
+    ],
+    "options": ["would", "will", "are"],
+    "correctAnswer": "would"
+  },
+  {
+    "question": "They _____ ever check their inbox.",
+    "a": [
+      { "option": "hard", "correct": false },
+      { "option": "hardly ever", "correct": true },
+      { "option": "hardly", "correct": false }
+    ],
+    "options": ["hard", "hardly ever", "hardly"],
+    "correctAnswer": "hardly ever"
+  },
+  {
+    "question": "They won't come, _____ they?",
+    "a": [
+      { "option": "won't", "correct": false },
+      { "option": "come", "correct": false },
+      { "option": "will", "correct": true }
+    ],
+    "options": ["won't", "come", "will"],
+    "correctAnswer": "will"
+  },
+  {
+    "question": " He _____ know how to pronounce it.",
+    "a": [
+      { "option": "doesn't", "correct": true },
+      { "option": "hasn't", "correct": false },
+      { "option": "don't", "correct": false }
+    ],
+    "options": ["doesn't", "hasn't", "don't"],
+    "correctAnswer": "doesn't"
+  },
+  {
+    "question": "Julie _____ to the radio all morning.",
+    "a": [
+      { "option": "listening", "correct": false },
+      { "option": "heard", "correct": false },
+      { "option": "listened", "correct": true }
+    ],
+    "options": ["listening", "heard", "listened"],
+    "correctAnswer": "listened"
+  },
+  {
+    "question": "They _____ come to the movies with us.",
+    "a": [
+      { "option": "doesn't", "correct": false },
+      { "option": "not", "correct": false },
+      { "option": "didn't", "correct": true }
+    ],
+    "options": ["doesn't", "not", "didn't"],
+    "correctAnswer": "didn't"
+  },
+  {
+    "question": "I like this book. _____ do I.",
+    "a": [
+      { "option": "Either", "correct": false },
+      { "option": "So", "correct": true },
+      { "option": "Neither", "correct": false }
+    ],
+    "options": ["Either", "So", "Neither"],
+    "correctAnswer": "So"
+  },
+  {
+    "question": "We _____ them at nine o'clock.",
+    "a": [
+      { "option": "meet ", "correct": false },
+      { "option": "'re meet", "correct": false },
+      { "option": "'re meeting", "correct": true }
+    ],
+    "options": ["meet ", "'re meet", "'re meeting"],
+    "correctAnswer": " 're meeting"
+  },
+  {
+    "question": "They are going _____ in Morocco next month.",
+    "a": [
+      { "option": "to be", "correct": true },
+      { "option": "will be", "correct": false },
+      { "option": "be", "correct": false },
+      { "option": "being", "correct": false }
+    ],
+    "options": ["to be", "will be", "be", "being"],
+    "correctAnswer": "to be"
+  },
+  {
+    "question": "This is the cinema _____ we saw the film.",
+    "a": [
+      { "option": "when", "correct": false },
+      { "option": "which", "correct": false },
+      { "option": "that", "correct": false },
+      { "option": "where", "correct": true }
+    ],
+    "options": ["when", "which", "that", "where"],
+    "correctAnswer": "where"
+  },
+  {
+    "question": "Have you ever _____ in a rock band?",
+    "a": [
+      { "option": "seen", "correct": false },
+      { "option": "played", "correct": true },
+      { "option": "listened", "correct": false },
+      { "option": "wanted", "correct": false }
+    ],
+    "options": ["seen", "played", "listened", "wanted"],
+    "correctAnswer": "played"
+  },
+  {
+    "question": "I'm _____ when I'm with you.",
+    "a": [
+      { "option": "happyer", "correct": false },
+      { "option": "happier than", "correct": false },
+      { "option": "happier", "correct": true },
+      { "option": "being", "correct": false }
+    ],
+    "options": ["happyer", "happier than", "happier", "the happy"],
+    "correctAnswer": "happier"
+  },
+  {
+    "question": "This is _____ than I imagined.",
+    "a": [
+      { "option": "bad", "correct": false },
+      { "option": "badder", "correct": false },
+      { "option": "worse", "correct": true },
+      { "option": "worst", "correct": false }
+    ],
+    "options": ["bad", "badder", "worse", "worst"],
+    "correctAnswer": "worse"
+  },
+  {
+    "question": "Can you tell me the way _____ ?",
+    "a": [
+      { "option": "to the bank", "correct": true },
+      { "option": "is the bank", "correct": false },
+      { "option": " where is bank", "correct": false },
+      { "option": "of the bank", "correct": false }
+    ],
+    "options": ["to the bank", "is the bank", " where is bank", "of the bank"],
+    "correctAnswer": "to the bank"
+  },
+  {
+    "question": "Do you know what _____ ?",
+    "a": [
+      { "option": "time is it", "correct": false },
+      { "option": "time is", "correct": false },
+      { "option": "time is now", "correct": false },
+      { "option": "time it is", "correct": true }
+    ],
+    "options": ["time is it", "time is", "time is now", "time it is"],
+    "correctAnswer": "time it is"
+  },
+  {
+    "question": "Were you _____ to open the door?",
+    "a": [
+      { "option": "could", "correct": false },
+      { "option": "can", "correct": false },
+      { "option": "able", "correct": true },
+      { "option": "possible", "correct": false }
+    ],
+    "options": ["could", "can", "able", "possible"],
+    "correctAnswer": "able"
+  },
+  {
+    "question": "Everybody _____ wear a seat belt in the car.",
+    "a": [
+      { "option": "must", "correct": true },
+      { "option": "mustn't", "correct": false },
+      { "option": "don't have to", "correct": false },
+      { "option": "doesn't have to", "correct": false }
+    ],
+    "options": ["must", "mustn't", "don't have to", "doesn't have to"],
+    "correctAnswer": "must"
+  },
+  {
+    "question": "Helen has lived in this town _____ three years.",
+    "a": [
+      { "option": "since", "correct": false },
+      { "option": "from", "correct": false },
+      { "option": "after", "correct": false },
+      { "option": "for", "correct": true }
+    ],
+    "options": ["since", "from", "after", "for"],
+    "correctAnswer": "for"
+  },
+  {
+    "question": "We _____ work in that farm.",
+    "a": [
+      { "option": "use to", "correct": false },
+      { "option": "was", "correct": false },
+      { "option": "used to", "correct": true },
+      { "option": "then", "correct": false }
+    ],
+    "options": ["use to", "was", "used to", "then"],
+    "correctAnswer": "used to"
+  },
+  {
+    "question": "I think it _____ be rainy tomorrow.",
+    "a": [
+      { "option": "will probably", "correct": true },
+      { "option": "probably", "correct": false },
+      { "option": "can", "correct": false },
+      { "option": "will to", "correct": false }
+    ],
+    "options": ["will probably", "probably", "can", "will to"],
+    "correctAnswer": "will probablu"
+  },
+  {
+    "question": "He _____ like his father.",
+    "a": [
+      { "option": "look", "correct": false },
+      { "option": "isn't", "correct": true },
+      { "option": "isn't look", "correct": false },
+      { "option": "can look", "correct": false }
+    ],
+    "options": ["look", "isn't", "isn't look", "can look"],
+    "correctAnswer": "isn't"
+  },
+  {
+    "question": "_____ does your girlfriend look like?",
+    "a": [
+      { "option": "How", "correct": false },
+      { "option": "What", "correct": true },
+      { "option": "Why", "correct": false },
+      { "option": "Which", "correct": false }
+    ],
+    "options": ["How", "What", "Why", "Which"],
+    "correctAnswer": "What"
+  },
+  {
+    "question": "I've got _____ many problems.",
+    "a": [
+      { "option": "too", "correct": true },
+      { "option": "a", "correct": false },
+      { "option": "enough", "correct": false },
+      { "option": "really", "correct": false }
+    ],
+    "options": ["too", "a", "enough", "really"],
+    "correctAnswer": "too"
+  },
+  {
+    "question": "If we get up in time, _____ catch the flight.",
+    "a": [
+      { "option": "we catch", "correct": false },
+      { "option": "we caught", "correct": false },
+      { "option": " we had caught", "correct": false },
+      { "option": "we'll catch", "correct": true }
+    ],
+    "options": ["we catch", "we caught", "we had caught", "we'll catch"],
+    "correctAnswer": "we'll catch"
+  },
+  {
+    "question": "They _____ to go to Italy for a year.",
+    "a": [
+      { "option": "decide", "correct": false },
+      { "option": "deciding", "correct": false },
+      { "option": "decided", "correct": true },
+      { "option": "to decide", "correct": false }
+    ],
+    "options": ["decide", "deciding", "decided", "to decide"],
+    "correctAnswer": "decided"
+  },
+  {
+    "question": "I'm working _____ to pass my exam.",
+    "a": [
+      { "option": "hardly ", "correct": false },
+      { "option": "much", "correct": false },
+      { "option": "hard", "correct": true },
+      { "option": "good", "correct": false }
+    ],
+    "options": ["hardly ", "much", "hard", "good"],
+    "correctAnswer": "hard"
+  },
+  {
+    "question": "I'm writing _____ ask you to explain.",
+    "a": [
+      { "option": "for", "correct": false },
+      { "option": "in order to", "correct": true },
+      { "option": "because", "correct": false },
+      { "option": "because of", "correct": false }
+    ],
+    "options": ["for", "in order to", "because", "because of"],
+    "correctAnswer": "in order to"
+  },
+  {
+    "question": "He said that most problems _____ by teenagers.",
+    "a": [
+      { "option": "cause", "correct": false },
+      { "option": "caused", "correct": false },
+      { "option": "were caused", "correct": true },
+      { "option": "were causing", "correct": false }
+    ],
+    "options": ["cause", "caused", "were caused", "were causing"],
+    "correctAnswer": "were caused"
+  },
+  {
+    "question": "What _____ to do at the weekend?",
+    "a": [
+      { "option": "have you like", "correct": false },
+      { "option": "are you liking", "correct": false },
+      { "option": "do you like", "correct": true },
+      { "option": "is you like", "correct": false }
+    ],
+    "options": ["have you like", "are you liking", "do you like", "is you like"],
+    "correctAnswer": "do you like"
+  },
+  {
+    "question": "Football _____ in many countries.",
+    "a": [
+      { "option": "plays", "correct": false },
+      { "option": "players", "correct": false },
+      { "option": "is played", "correct": true },
+      { "option": "is playing", "correct": false }
+    ],
+    "options": ["plays", "players", "is played", "is playing"],
+    "correctAnswer": "is played"
+  },
+  {
+    "question": "Who was _____ the door?",
+    "a": [
+      { "option": "at", "correct": true },
+      { "option": "on", "correct": false },
+      { "option": "in", "correct": false },
+      { "option": "of", "correct": false }
+    ],
+    "options": ["at", "on", "in", "of"],
+    "correctAnswer": "at"
+  },
+  {
+    "question": "We _____ lunch when you called.",
+    "a": [
+      { "option": "was having", "correct": false },
+      { "option": "had", "correct": false },
+      { "option": "were having", "correct": true },
+      { "option": "are having", "correct": false }
+    ],
+    "options": ["was having", "had", "were having", "are having"],
+    "correctAnswer": "were having"
+  },
+  {
+    "question": "Your work is _____ better.",
+    "a": [
+      { "option": "being", "correct": false },
+      { "option": "doing", "correct": false },
+      { "option": "getting", "correct": true },
+      { "option": "falling", "correct": false }
+    ],
+    "options": ["being", "doing", "getting", "falling"],
+    "correctAnswer": "getting"
+  },
+  {
+    "question": "She could play the guitar _____ she could walk.",
+    "a": [
+      { "option": "during", "correct": false },
+      { "option": "while", "correct": false },
+      { "option": "as well", "correct": false },
+      { "option": "before", "correct": true }
+    ],
+    "options": ["during", "while", "as well", "before"],
+    "correctAnswer": "before"
+  },
+  {
+    "question": "The train was cancelled, so we _____.",
+    "a": [
+      { "option": "couldn't go", "correct": true },
+      { "option": "wasn't go", "correct": false },
+      { "option": "didn't go", "correct": false },
+      { "option": "mustn't go", "correct": false }
+    ],
+    "options": ["couldn't go", "wasn't go", "didn't go", "mustn't go"],
+    "correctAnswer": "couldn't go"
+  },
+  {
+    "question": "The problem was _____ solved",
+    "a": [
+      { "option": "easy", "correct": false },
+      { "option": "easy to", "correct": false },
+      { "option": "an easy", "correct": false },
+      { "option": "easily", "correct": true }
+    ],
+    "options": ["easy", "easy to", "an easy", "easily"],
+    "correctAnswer": "easily"
+  },
+  {
+    "question": "It was a difficult journey, but I _____ get home.",
+    "a": [
+      { "option": "could", "correct": false },
+      { "option": "managed to", "correct": true },
+      { "option": "at last", "correct": false },
+      { "option": "was", "correct": false }
+    ],
+    "options": ["could", "managed to", "at last", "was"],
+    "correctAnswer": "managed to"
+  },
+  {
+    "question": "We had not _____ heard the news.",
+    "a": [
+      { "option": "already", "correct": false },
+      { "option": "always", "correct": false },
+      { "option": "yet", "correct": true },
+      { "option": "today", "correct": false }
+    ],
+    "options": ["already", "always", "yet", "today"],
+    "correctAnswer": "yet"
+  },
+  {
+    "question": "We arrived at the station, but the train _____ earlier.",
+    "a": [
+      { "option": "has left", "correct": false },
+      { "option": "had leave", "correct": false },
+      { "option": "has leave", "correct": false },
+      { "option": "had left", "correct": true }
+    ],
+    "options": ["has left", "had leave", "has leave", "had left"],
+    "correctAnswer": "had left"
+  },
+  {
+    "question": "We can _____ walk or go by taxi.",
+    "a": [
+      { "option": "both", "correct": false },
+      { "option": "rather", "correct": false },
+      { "option": "either", "correct": true },
+      { "option": "neither", "correct": false }
+    ],
+    "options": ["both", "rather", "either", "neither"],
+    "correctAnswer": "either"
+  },
+  {
+    "question": "If I _____ enough money, I'd buy a new car.",
+    "a": [
+      { "option": "had", "correct": true },
+      { "option": "would", "correct": false },
+      { "option": "did", "correct": false },
+      { "option": "shall", "correct": false }
+    ],
+    "options": ["had", "would", "did", "shall"],
+    "correctAnswer": "had"
+  },
+  {
+    "question": "It _____ correctly.",
+    "a": [
+      { "option": "hasn't done", "correct": false },
+      { "option": "hasn't been done", "correct": true },
+      { "option": "hasn't been do", "correct": false },
+      { "option": "not been done", "correct": false }
+    ],
+    "options": ["hasn't done", "hasn't been done", "hasn't been do", "not been done"],
+    "correctAnswer": "hasn't been done"
+  },
+  {
+    "question": "The accident wouldn't have happened, if you had been more _____ .",
+    "a": [
+      { "option": "careful", "correct": true },
+      { "option": "carefully", "correct": false },
+      { "option": "careless", "correct": false },
+      { "option": "caring", "correct": false }
+    ],
+    "options": ["careful", "carefully", "careless", "caring"],
+    "correctAnswer": "careful"
+  },
+  {
+    "question": "It _____ be possible some time in the future.",
+    "a": [
+      { "option": "can", "correct": false },
+      { "option": "hope", "correct": false },
+      { "option": "may", "correct": true },
+      { "option": "is", "correct": false }
+    ],
+    "options": ["can", "hope", "may", "is"],
+    "correctAnswer": "may"
+  },
+  {
+    "question": "Schools then _____ having more children in the class.",
+    "a": [
+      { "option": "was used to", "correct": false },
+      { "option": "were used to", "correct": true },
+      { "option": "was use to", "correct": false },
+      { "option": "were use to", "correct": false }
+    ],
+    "options": ["was used to", "were used to", "was use to", "were use to"],
+    "correctAnswer": "were used to"
+  },
+  {
+    "question": "We _____ to go to work at seven in the morning.",
+    "a": [
+      { "option": "must", "correct": false },
+      { "option": "would", "correct": false },
+      { "option": "had", "correct": true },
+      { "option": "did", "correct": false }
+    ],
+    "options": ["must", "would", "had", "did"],
+    "correctAnswer": "had"
+  },
+  {
+    "question": "They _____ an old photograph of the building.",
+    "a": [
+      { "option": "came up", "correct": false },
+      { "option": "came across", "correct": true },
+      { "option": "came into", "correct": false },
+      { "option": "came after", "correct": false }
+    ],
+    "options": ["came up", "came across", "came into", "came after"],
+    "correctAnswer": "came across"
+  },
+  {
+    "question": "I _____ I had been able to meet her.",
+    "a": [
+      { "option": "hope", "correct": false },
+      { "option": "want", "correct": false },
+      { "option": "think", "correct": false },
+      { "option": "wish", "correct": true }
+    ],
+    "options": ["hope", "want", "think", "wish"],
+    "correctAnswer": "wish"
+  },
+  {
+    "question": "We'll have taken our exams _____ this time next week.",
+    "a": [
+      { "option": "by", "correct": true },
+      { "option": "on", "correct": false },
+      { "option": "during", "correct": false },
+      { "option": "for", "correct": false }
+    ],
+    "options": ["by", "on", "during", "for"],
+    "correctAnswer": "by"
+  },
+  {
+    "question": "I will do badly in my work, _____ try harder.",
+    "a": [
+      { "option": "if I'm not", "correct": false },
+      { "option": "if I wasn't", "correct": false },
+      { "option": "if I haven't", "correct": false },
+      { "option": "if I don't", "correct": true }
+    ],
+    "options": ["if I'm not", "if I wasn't", "if I haven't", "if I don't"],
+    "correctAnswer": "if I don't"
+  },
+  {
+    "question": "I _____ wasted my time when I was at college.",
+    "a": [
+      { "option": "regret", "correct": false },
+      { "option": "shouldn't", "correct": false },
+      { "option": "ought not to", "correct": false },
+      { "option": "shouldn't have", "correct": true }
+    ],
+    "options": ["regret", "shouldn't", "ought not to", "shouldn't have"],
+    "correctAnswer": "shouldn't have"
+  },
+  {
+    "question": "This is going to be my chance to _____ any difficulties.",
+    "a": [
+      { "option": "repair", "correct": false },
+      { "option": "sort out", "correct": true },
+      { "option": "solve", "correct": false },
+      { "option": "improve", "correct": false }
+    ],
+    "options": ["repair", "sort out", "solve", "improve"],
+    "correctAnswer": "sort out"
+  },
+  {
+    "question": "It was difficult at first, but I soon got _____ it.",
+    "a": [
+      { "option": "got used to", "correct": false },
+      { "option": "get used to", "correct": false },
+      { "option": "changed to", "correct": false },
+      { "option": "used to", "correct": true }
+    ],
+    "options": ["got used to", "get used to", "changed to", "used to"],
+    "correctAnswer": "used to"
+  },
+  {
+    "question": "How did you manage to cook _____ a good meal?",
+    "a": [
+      { "option": "so", "correct": false },
+      { "option": "that", "correct": false },
+      { "option": "absolutely", "correct": false },
+      { "option": "such", "correct": true }
+    ],
+    "options": ["so", "that", "absolutely", "such"],
+    "correctAnswer": "such"
+  },
+  {
+    "question": "The solution had been found, _____ we hadn't realised it.",
+    "a": [
+      { "option": "however", "correct": false },
+      { "option": "therefore", "correct": false },
+      { "option": "although", "correct": true },
+      { "option": "even", "correct": false }
+    ],
+    "options": ["however", "therefore", "although", "even"],
+    "correctAnswer": "although"
+  },
+  {
+    "question": "She _____ what I had been doing for all that time.",
+    "a": [
+      { "option": "asked to me", "correct": false },
+      { "option": "asked for me", "correct": false },
+      { "option": "asked with me", "correct": false },
+      { "option": "asked me", "correct": true }
+    ],
+    "options": ["asked to me", "asked for me", "asked with me", "asked me"],
+    "correctAnswer": "asked me"
+  },
+  {
+    "question": "They _____ heard us coming, we were making a lot of noise.",
+    "a": [
+      { "option": "must have", "correct": true },
+      { "option": "must", "correct": false },
+      { "option": "might", "correct": false },
+      { "option": "could", "correct": false }
+    ],
+    "options": ["must have", "must", "might", "could"],
+    "correctAnswer": "must have"
+  },
+  {
+    "question": "He _____ to help me with the decorating.",
+    "a": [
+      { "option": "suggested", "correct": false },
+      { "option": "offered", "correct": true },
+      { "option": "invited", "correct": false },
+      { "option": "told", "correct": false }
+    ],
+    "options": ["suggested", "offered", "invited", "told"],
+    "correctAnswer": "offered"
+  }
+]

@@ -1,13 +1,16 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import logoEdu from "../assets/img/logoEdu.svg";
 import Header from "../components/Header";
 import { BritishFlag, CaImage } from "../components/Icons";
 
-const LandingPage = () => {
+const LandingPage = ({ existing }) => {
   const navigate = useNavigate();
+  const { token, tracking_id } = useParams();
+
+  // console.log({ existing, token });
   return (
     <Box
       sx={{
@@ -160,7 +163,7 @@ const LandingPage = () => {
           color="green"
           variant="contained"
           size="large"
-          onClick={() => navigate("/quiz")}
+          onClick={() => navigate(existing && token ? `/quiz/${token}` : tracking_id ? `/ads/${tracking_id}/quiz` : `/quiz`)}
         >
           INIZIA IL TEST
         </Button>

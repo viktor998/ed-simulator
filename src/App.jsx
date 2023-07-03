@@ -22,13 +22,22 @@ const App = () => {
         </div>
       }
     >
-      <BrowserRouter>
+      <BrowserRouter basename="/simulator/">
         <ThemeProvider theme={theme}>
           <Routes>
             <Route path="/" element={<LayoutPage />}>
               <Route index element={<LandingPage />} />
+              <Route path="/:token" element={<LandingPage existing />} />
+              <Route path="/quiz/:token/" element={<QuizPage existing />} />
               <Route path="/quiz" element={<QuizPage />} />
               <Route path="/results" element={<ResultPage />} />
+              <Route path="*" element={<NoPage />} />
+            </Route>
+
+            <Route path="/ads/:tracking_id" element={<LayoutPage />}>
+              <Route index element={<LandingPage />} />
+              <Route path="/ads/:tracking_id/quiz" element={<QuizPage />} />
+              <Route path="/ads/:tracking_id/results" element={<ResultPage />} />
               <Route path="*" element={<NoPage />} />
             </Route>
           </Routes>

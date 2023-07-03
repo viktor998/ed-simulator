@@ -1,51 +1,86 @@
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import { Box, Button, Typography, useMediaQuery } from "@mui/material";
-import dayjs from "dayjs";
-import customParseFormat from "dayjs/plugin/customParseFormat";
-import React, { useCallback, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-
+import React, { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import _questions from "../assets/questions.json";
+import questions_existing from "../assets/questions_existing.json";
 import logoEduBianco from "../assets/img/logoEduBianco.svg";
 import Header from "../components/Header";
-import {
-  ArrowBackIosRounded,
-  ArrowForwardIosRounded,
-  CheckCircleRounded,
-  ExpandMore,
-  HighlightOff,
-  Visibility,
-  VisibilityOff,
-} from "@mui/icons-material";
+import { ArrowBackIosRounded, ArrowForwardIosRounded } from "@mui/icons-material";
+import axios from "axios";
+const BASE = import.meta.env.VITE_BASE_URL_ADMIN;
 
-const TOMTOM_KEY = import.meta.env.VITE_TOMTOM_API;
-document.title = "Form Edusogno";
-const QuizPage = () => {
+document.title = "Edusogno Simulatore";
+const QuizPage = ({ existing = false }) => {
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
-
+  const [points, setPoints] = useState(0);
+  const [leadData, setLeadData] = useState(null);
   const navigate = useNavigate();
+  const { token, tracking_id } = useParams();
 
-  const questions = [
-    {
-      question: "I called Tom, ___ he didn't answer.",
-      options: ["and", "but", "or", "so"],
-      correctAnswer: "but",
-    },
-    {
-      question: "Tommy ___ died.",
-      options: ["are", "were", "is", "will"],
-      correctAnswer: "but",
-    },
-    {
-      question: "Jason ___ a student.",
-      options: ["is", "are", "were", "will be"],
-      correctAnswer: "but",
-    },
-  ];
+  const questions = existing && token ? questions_existing : _questions;
+
+  const getLevel = () => {
+    const correctAnswers = questions.map((q) => q.correctAnswer);
+    let points = 0;
+    answers.forEach((answer, index) => {
+      if (answer === correctAnswers[index]) {
+        points++;
+      }
+    });
+
+    let level = "";
+
+    if (existing && token) {
+      if (points <= 20) {
+        level = "A1";
+      } else if (points <= 35 && points > 20) {
+        level = "A1/A2";
+      } else if (points <= 60 && points > 35) {
+        level = "A2";
+      } else if (points <= 85 && points > 60) {
+        level = "B1";
+      } else if (points <= 100 && points > 85) {
+        level = "B2";
+      }
+    } else {
+      // OLD
+      // if (points <= 3) {
+      //   level = "A1";
+      // } else if (points <= 7 && points > 3) {
+      //   level = "A2";
+      // } else if (points <= 10 && points > 7) {
+      //   level = "B1";
+      // } else if (points <= 14 && points > 10) {
+      //   level = "B2";
+      // } else if (points >= 18) {
+      //   level = "C1";
+      // }
+
+      if (points <= 8) {
+        level = "A1";
+      } else if (points <= 13 && points > 8) {
+        level = "A2";
+      } else if (points <= 18 && points > 13) {
+        level = "B1";
+      } else if (points <= 22 && points > 19) {
+        level = "B2";
+      } else if (points <= 24 && points > 22) {
+        level = "C1";
+      } else if (points > 24) {
+        level = "C1 +";
+      }
+    }
+
+    return { points, level };
+  };
+
   const smUp = useMediaQuery("(max-width:1047px)");
   const next = () => {
-    if (activeQuestion + 1 === questions.length - 1) {
-      navigate("/results");
+    if (activeQuestion === questions.length - 1) {
+      //calculate points
+      const { points, level } = getLevel();
+      navigate("/results", { state: { points, level, token, leadData } });
     }
     setActiveQuestion((r) => r + 1);
   };
@@ -58,13 +93,51 @@ const QuizPage = () => {
     dpCopyAnswer[activeQuestion] = value;
     setAnswers(dpCopyAnswer);
   };
+
+  const getAdsData = async () => {
+    const adsData = await axios
+      .post(
+        BASE + `v1/lead/${tracking_id}`,
+        { tracking_id },
+        {
+          headers: {
+            "Content-type": "application/json",
+            Accept: "application/json",
+          },
+        }
+      )
+      .then((res) => res.data);
+
+    // console.log({ adsData });
+
+    if (adsData?.[0].label !== "") {
+      let urlParams =
+        "?" +
+        adsData
+          .map((ad) => {
+            if (ad.label !== "complete_url") {
+              return `${ad.label}=${ad.value}`;
+            }
+          })
+          .filter((ad) => ad !== undefined)
+          .join("&");
+      setLeadData(urlParams);
+    }
+  };
+
+  React.useEffect(() => {
+    if (!tracking_id) return;
+
+    getAdsData();
+  }, [tracking_id]);
+
+  // React.useEffect(() => {
+  //   // console.log(answers);
+  // }, [points]);
   return (
     <Box
       sx={{
         display: "grid",
-        // ["@media (min-width:1047px)"]: {
-        //   gridTemplateRows: "3fr 8fr",
-        // },
         gridTemplateRows: "25vh 75vh",
         height: "calc(var(--vh, 1vh) * 100)",
         overflowX: "hidden",
@@ -95,9 +168,7 @@ const QuizPage = () => {
         <Box
           className={`absolute right-0 top-0 bg-white nascondi transition-all`}
           sx={{
-            width: `${
-              100 - ((activeQuestion + 0.01) / (questions.length - 1)) * 100
-            }%`,
+            width: `${100 - ((activeQuestion + 0.01) / (questions.length - 1)) * 100}%`,
             transition: "all 2s",
           }}
         ></Box>
@@ -123,7 +194,7 @@ const QuizPage = () => {
               textAlign: "center",
               ["@media (min-width:1047px)"]: {
                 marginTop: "auto",
-                textAlign: "left",
+                textAlign: "center",
               },
             }}
           >
@@ -132,6 +203,7 @@ const QuizPage = () => {
           <Box
             sx={{
               display: "grid",
+              placeItems: "center",
               gridTemplateColumns: "1fr",
               width: "90%",
               gap: "1rem",
@@ -141,7 +213,7 @@ const QuizPage = () => {
                 maxHeight: "56px",
               },
               ["@media (min-width:763px)"]: {
-                gridTemplateColumns: "1fr 1fr 1fr 1fr",
+                gridTemplateColumns: Array.from({ length: questions[activeQuestion].options?.length }, () => "1fr").join(" "),
                 marginTop: "10vh",
                 "& button": {
                   width: "100%",
@@ -175,10 +247,7 @@ const QuizPage = () => {
                   selectAnswer(r);
                 }}
                 sx={{
-                  color:
-                    r === answers[activeQuestion]
-                      ? "#ffffff"
-                      : "#2D224C!important",
+                  color: r === answers[activeQuestion] ? "#ffffff" : "#2D224C!important",
                 }}
               >
                 {r}
@@ -211,25 +280,13 @@ const QuizPage = () => {
                 // sx={{ }}
                 onClick={() => back()}
               >
-                <ArrowBackIosRounded
-                  fontSize={smUp ? "small" : "medium"}
-                  className="lg:absolute lg:left-4"
-                />
+                <ArrowBackIosRounded fontSize={smUp ? "small" : "medium"} className="lg:absolute lg:left-4" />
                 {!smUp && <span>back</span>}
               </Button>
             )}
-            <Button
-              disabled={!Boolean(answers[activeQuestion])}
-              variant="contained"
-              color="button"
-              size="large"
-              onClick={() => next()}
-            >
+            <Button disabled={!Boolean(answers[activeQuestion])} variant="contained" color="button" size="large" onClick={() => next()}>
               {!smUp && <span>Next</span>}
-              <ArrowForwardIosRounded
-                className="lg:absolute lg:right-4"
-                fontSize={smUp ? "small" : "medium"}
-              />
+              <ArrowForwardIosRounded className="lg:absolute lg:right-4" fontSize={smUp ? "small" : "medium"} />
             </Button>
           </Box>
         </Box>

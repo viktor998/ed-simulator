@@ -1,0 +1,252 @@
+[
+  {
+    "question": "___ is your name",
+    "a": [
+      { "option": "How", "correct": false },
+      { "option": "What", "correct": true },
+      { "option": "Where", "correct": false }
+    ],
+    "options": ["How", "What", "Where"],
+    "correctAnswer": "What"
+  },
+  {
+    "question": "___ are you from",
+    "a": [
+      { "option": "How", "correct": false },
+      { "option": "What", "correct": false },
+      { "option": "Where", "correct": true }
+    ],
+    "options": ["How", "What", "Where"],
+    "correctAnswer": "Where"
+  },
+  {
+    "question": "That's _____. It's very expensive.",
+    "a": [
+      { "option": "Anna's car", "correct": true },
+      { "option": "the car of Anna", "correct": true },
+      { "option": "Anna car", "correct": false }
+    ],
+    "options": ["Anna's car", "the car of Anna", "Anna car"],
+    "correctAnswer": "Anna's car"
+  },
+  {
+    "question": "Does he have _____?",
+    "a": [
+      { "option": "any sisters", "correct": true },
+      { "option": "any sister", "correct": false },
+      { "option": "some sisters", "correct": false }
+    ],
+    "options": ["any sisters", "any sister", "Where"],
+    "correctAnswer": "any sisters"
+  },
+  {
+    "question": "____ do you live?",
+    "a": [
+      { "option": "Who", "correct": false },
+      { "option": "Where", "correct": true },
+      { "option": "What", "correct": false }
+    ],
+    "options": ["Who", "Where", "What"],
+    "correctAnswer": "Where"
+  },
+  {
+    "question": "I usually ____ up at 7am.",
+    "a": [
+      { "option": "sit", "correct": false },
+      { "option": "wake", "correct": true },
+      { "option": "stand", "correct": false }
+    ],
+    "options": ["sit", "wake", "stand"],
+    "correctAnswer": "wake"
+  },
+  {
+    "question": "_____ sugar do you want in your tea?",
+    "a": [
+      { "option": "How much", "correct": true },
+      { "option": "How many", "correct": false },
+      { "option": "What", "correct": false }
+    ],
+    "options": ["How much", "How many", "What"],
+    "correctAnswer": "How much"
+  },
+  {
+    "question": "I have ____ been to Paris.",
+    "a": [
+      { "option": "always", "correct": false },
+      { "option": "sometimes", "correct": false },
+      { "option": "never", "correct": true }
+    ],
+    "options": ["always", "sometimes", "never"],
+    "correctAnswer": "never"
+  },
+  {
+    "question": "I like to ____ my guitar.",
+    "a": [
+      { "option": "playing", "correct": false },
+      { "option": "play", "correct": true },
+      { "option": "sound", "correct": false }
+    ],
+    "options": ["playing", "play", "sound"],
+    "correctAnswer": "play"
+  },
+  {
+    "question": "The ____ in Tokyo is usually mild.",
+    "a": [
+      { "option": "climate", "correct": false },
+      { "option": "temperature", "correct": false },
+      { "option": "weather", "correct": true }
+    ],
+    "options": ["climate", "temperature", "weather"],
+    "correctAnswer": "weather"
+  },
+  {
+    "question": "I ____ been learning English for 2 years.",
+    "a": [
+      { "option": "have", "correct": true },
+      { "option": "had", "correct": false },
+      { "option": "am", "correct": false }
+    ],
+    "options": ["have", "had", "am"],
+    "correctAnswer": "have"
+  },
+  {
+    "question": "I have ____ brother and one sister.",
+    "a": [
+      { "option": "an", "correct": false },
+      { "option": "a", "correct": true },
+      { "option": "some", "correct": false }
+    ],
+    "options": ["an", "a", "some"],
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Last weekend, I ____ to the beach.",
+    "a": [
+      { "option": "went", "correct": true },
+      { "option": "have gone", "correct": false },
+      { "option": "go", "correct": false }
+    ],
+    "options": ["went", "have gone", "go"],
+    "correctAnswer": "went"
+  },
+  {
+    "question": "Can you give me ____ to the nearest restaurant?",
+    "a": [
+      { "option": "a book", "correct": false },
+      { "option": "a ride", "correct": true },
+      { "option": "a car", "correct": false }
+    ],
+    "options": ["a book", "a ride", "a car"],
+    "correctAnswer": "a ride"
+  },
+  {
+    "question": "I enjoy ____ movies and reading books.",
+    "a": [
+      { "option": "watching", "correct": true },
+      { "option": "seeing", "correct": false },
+      { "option": "looking", "correct": false }
+    ],
+    "options": ["watching", "seeing", "looking"],
+    "correctAnswer": "watching"
+  },
+  {
+    "question": "I can cook lasagna ___",
+    "a": [
+      { "option": "good", "correct": false },
+      { "option": "better", "correct": false },
+      { "option": "well", "correct": true }
+    ],
+    "options": ["good", "better", "well"],
+    "correctAnswer": "well"
+  },
+  {
+    "question": "The recent news story about politics was very ____.",
+    "a": [
+      { "option": "interesting", "correct": true },
+      { "option": "interested", "correct": false },
+      { "option": "interest", "correct": false }
+    ],
+    "options": ["interesting", "interested", "interest"],
+    "correctAnswer": "interesting"
+  },
+  {
+    "question": "I have ____ volunteered for a charity organization.",
+    "a": [
+      { "option": "ever", "correct": false },
+      { "option": "never", "correct": true },
+      { "option": "sometimes", "correct": false }
+    ],
+    "options": ["ever", "never", "sometimes"],
+    "correctAnswer": "never"
+  },
+  {
+    "question": "The new sofa isn't ____ the old one.",
+    "a": [
+      { "option": "as nice as", "correct": true },
+      { "option": "as nice than", "correct": false },
+      { "option": "nicer like", "correct": false }
+    ],
+    "options": ["as nice as", "as nice than", "nicer like"],
+    "correctAnswer": "as nice as"
+  },
+  {
+    "question": "To stay healthy, I usually ____ exercise and eat well.",
+    "a": [
+      { "option": "do", "correct": true },
+      { "option": "make", "correct": false },
+      { "option": "take", "correct": false }
+    ],
+    "options": ["do", "make", "take"],
+    "correctAnswer": "do"
+  },
+  {
+    "question": "I love reading books by Elena Ferrante because they are so____.",
+    "a": [
+      { "option": "written good", "correct": false },
+      { "option": "well-written", "correct": true },
+      { "option": "good-written", "correct": false }
+    ],
+    "options": ["written good", "well-written", "good-written"],
+    "correctAnswer": "well-written"
+  },
+  {
+    "question": "One ____ topic in society is climate change.",
+    "a": [
+      { "option": "controverse", "correct": false },
+      { "option": "controverted", "correct": false },
+      { "option": "controversial ", "correct": true }
+    ],
+    "options": ["controverse", "controverted", "controversial "],
+    "correctAnswer": "controversial"
+  },
+  {
+    "question": "It is important to act ____ climate change.",
+    "a": [
+      { "option": "against", "correct": true },
+      { "option": "about", "correct": false },
+      { "option": "for", "correct": false }
+    ],
+    "options": ["against", "about", "for"],
+    "correctAnswer": "against"
+  },
+  {
+    "question": "He _____ robbed as he was walking out of the bank.",
+    "a": [
+      { "option": "had", "correct": false },
+      { "option": "did", "correct": false },
+      { "option": "got", "correct": true }
+    ],
+    "options": ["had", "did", "got"],
+    "correctAnswer": "got"
+  },
+  {
+    "question": "I wish I _____ those words. But now it's too late.",
+    "a": [
+      { "option": "have never said", "correct": false },
+      { "option": "never said", "correct": false },
+      { "option": "had never said", "correct": true }
+    ],
+    "options": ["have never said", "never said", "had never said"],
+    "correctAnswer": "had never said"
+  }
+]

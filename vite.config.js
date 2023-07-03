@@ -4,8 +4,10 @@ import { VitePluginFonts } from "vite-plugin-fonts";
 import path from "node:path";
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: "/demoAcademy2/",
-  // base: "/demoAcademy2/",
+  base: "/simulator/",
+  server: {
+    port: 3004,
+  },
   resolve: {
     alias: {
       "@assets": path.resolve(__dirname, "./src/assets"),

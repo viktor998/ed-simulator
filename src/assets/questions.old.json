@@ -1,0 +1,218 @@
+[
+  {
+    "question": "A: Why didn't you tell me? - B: I_____you.",
+    "a": [
+      { "option": "could help", "correct": false },
+      { "option": "could have helped", "correct": true },
+      { "option": "was able to help", "correct": false },
+      { "option": "would help", "correct": false }
+    ],
+    "options": ["could help", "could have helped", "was able to help", "would help"],
+    "correctAnswer": "could have helped"
+  },
+  {
+    "question": "___I love sweets and cakes, I try not to eat them during the week",
+    "a": [
+      { "option": "Although", "correct": true },
+      { "option": "Despite", "correct": false },
+      { "option": "In spite of", "correct": false }
+    ],
+    "options": ["Although", "Despite", "In spite of"],
+    "correctAnswer": "Although"
+  },
+  {
+    "question": "I really like this shirt. Ok, ______it now!",
+    "a": [
+      { "option": "I am going to buy", "correct": false },
+      { "option": "I buy", "correct": false },
+      { "option": "I am buying", "correct": false },
+      { "option": "I'll buy", "correct": true }
+    ],
+    "options": ["I am going to buy", "I buy", "I am buying", "I'll buy"],
+    "correctAnswer": "I'll buy"
+  },
+  {
+    "question": "______ (you) in this house for a long time?",
+    "a": [
+      { "option": "Do you live", "correct": false },
+      { "option": "Did you live", "correct": false },
+      { "option": "Have you lived", "correct": true },
+      { "option": "Are you living", "correct": false }
+    ],
+    "options": ["Do you live", "Did you live", "Have you lived", "Are you living"],
+    "correctAnswer": "Have you lived"
+  },
+  {
+    "question": "Yesterday I_____too much money",
+    "a": [
+      { "option": "spended", "correct": false },
+      { "option": "have spended", "correct": false },
+      { "option": "spent", "correct": true },
+      { "option": "have spent", "correct": false }
+    ],
+    "options": ["spended", "have spended", "spent", "have spent"],
+    "correctAnswer": "spent"
+  },
+  {
+    "question": "You can keep my car____next week. I don't need it now.",
+    "a": [
+      { "option": "until", "correct": true },
+      { "option": "by", "correct": false },
+      { "option": "within", "correct": false }
+    ],
+    "options": ["until", "by", "within"],
+    "correctAnswer": "until"
+  },
+  {
+    "question": "John is not satisfied_____his job",
+    "a": [
+      { "option": "of", "correct": false },
+      { "option": "with", "correct": true },
+      { "option": "by", "correct": false },
+      { "option": "for", "correct": false }
+    ],
+    "options": ["of", "with", "by", "for"],
+    "correctAnswer": "with"
+  },
+  {
+    "question": "If I______, I would have passed the exam!",
+    "a": [
+      { "option": "studied", "correct": false },
+      { "option": "will study", "correct": false },
+      { "option": "had studied", "correct": true },
+      { "option": "have studied", "correct": false }
+    ],
+    "options": ["studied", "will study", "had studied", "have studied"],
+    "correctAnswer": "had studied"
+  },
+  {
+    "question": "Look at those black clouds. It______soon",
+    "a": [
+      { "option": "is going to rain", "correct": true },
+      { "option": "will rain", "correct": false },
+      { "option": "is raining", "correct": false },
+      { "option": "rains", "correct": false }
+    ],
+    "options": ["is going to rain", "will rain", "is raining", "rains"],
+    "correctAnswer": "is going to rain"
+  },
+  {
+    "question": "A: Where's Miho? - B: I don't know. She ______ home already.",
+    "a": [
+      { "option": "can have gone", "correct": false },
+      { "option": "must go", "correct": false },
+      { "option": "must have gone", "correct": true },
+      { "option": "would have gone", "correct": false }
+    ],
+    "options": ["can have gone", "must go", "must have gone", "would have gone"],
+    "correctAnswer": "must have gone"
+  },
+  {
+    "question": "Lucia is very good______",
+    "a": [
+      { "option": "at skiing", "correct": true },
+      { "option": "in skiing", "correct": false },
+      { "option": "on skiing", "correct": false },
+      { "option": "to skiing", "correct": false }
+    ],
+    "options": ["at skiing", "in skiing", "on skiing", "to skiing"],
+    "correctAnswer": "at skiing"
+  },
+  {
+    "question": "If I had the money, I______a new car.",
+    "a": [
+      { "option": "will buy", "correct": false },
+      { "option": "would buy", "correct": true },
+      { "option": "would have bought", "correct": false },
+      { "option": "buy", "correct": false }
+    ],
+    "options": ["will buy", "would buy", "would have bought", "buy"],
+    "correctAnswer": "would buy"
+  },
+  {
+    "question": "If you want to leave for your holidays in August, you should book the hotel right now, ____you won’t find any free rooms.",
+    "a": [
+      { "option": "besides", "correct": false },
+      { "option": "nor", "correct": false },
+      { "option": "as well as", "correct": false },
+      { "option": "otherwise", "correct": true }
+    ],
+    "options": ["besides", "nor", "as well as", "otherwise"],
+    "correctAnswer": "otherwise"
+  },
+  {
+    "question": "I wish it______so often",
+    "a": [
+      { "option": "doesn't rain", "correct": false },
+      { "option": "rains", "correct": false },
+      { "option": "didn't rain", "correct": true },
+      { "option": "will rain", "correct": false }
+    ],
+    "options": ["doesn't rain", "rains", "didn't rain", "will rain"],
+    "correctAnswer": "didn't rain"
+  },
+  {
+    "question": "The test will be from page 5 to page 10. You_____study also page 11",
+    "a": [
+      { "option": "don't have to", "correct": true },
+      { "option": "can't", "correct": false },
+      { "option": "will not", "correct": false },
+      { "option": "must not", "correct": false }
+    ],
+    "options": ["don't have to", "can't", "will not", "must not"],
+    "correctAnswer": "don't have to"
+  },
+  {
+    "question": "I have been training_____2 years",
+    "a": [
+      { "option": "since", "correct": false },
+      { "option": "for", "correct": true }
+    ],
+    "options": ["since", "for"],
+    "correctAnswer": "for"
+  },
+  {
+    "question": "Don't phone between 7pm and 8pm. We_____at that time",
+    "a": [
+      { "option": "are going to", "correct": false },
+      { "option": "will eat", "correct": false },
+      { "option": "will be eating", "correct": true },
+      { "option": "are eating", "correct": false }
+    ],
+    "options": ["are going to", "will eat", "will be eating", "are eating"],
+    "correctAnswer": "will be eating"
+  },
+  {
+    "question": "I would like to point___that the situation is very serious",
+    "a": [
+      { "option": "out", "correct": true },
+      { "option": "in", "correct": false },
+      { "option": "off", "correct": false },
+      { "option": "on", "correct": false }
+    ],
+    "options": ["out", "in", "off", "on"],
+    "correctAnswer": "out"
+  },
+  {
+    "question": "When I was 4, I_____swim very well",
+    "a": [
+      { "option": "could", "correct": true },
+      { "option": "can", "correct": false },
+      { "option": "was able", "correct": false },
+      { "option": "would", "correct": false }
+    ],
+    "options": ["could", "can", "was able", "would"],
+    "correctAnswer": "could"
+  },
+  {
+    "question": "It was nice____you to come and see me when I was ill",
+    "a": [
+      { "option": "from", "correct": false },
+      { "option": "of", "correct": true },
+      { "option": "to", "correct": false },
+      { "option": "with", "correct": false }
+    ],
+    "options": ["from", "of", "to", "with"],
+    "correctAnswer": "of"
+  }
+]

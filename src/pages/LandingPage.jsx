@@ -2,9 +2,10 @@ import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-import logoEdu from "../assets/img/logoEdu.svg";
-import Header from "../components/Header";
+import Footer from "./common/Footer";
+import Header from "./common/Header";
 import { BritishFlag, CaImage } from "../components/Icons";
+import { EdStart } from "../components/Illustration";
 
 const LandingPage = ({ existing }) => {
   const navigate = useNavigate();
@@ -12,163 +13,33 @@ const LandingPage = ({ existing }) => {
 
   // console.log({ existing, token });
   return (
-    <Box
-      sx={{
-        display: "grid",
-        backgroundColor: "#d9daf3",
-        gridTemplateColumns: "1fr",
-        gridTemplateRows: "15vh 45vh 40vh",
-        height: "calc(var(--vh, 1vh) * 100)",
-        "&::-webkit-scrollbar": {
-          width: "0em",
-        },
-        "scrollbar-width": "none",
-      }}
-      className="overflow-y-hidden"
-    >
-      <Header form={false}>
-        <Box
-          sx={{
-            width: "fit-content",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            margin: "auto auto 10vh auto",
-            "& img": {
-              width: "94px",
-              height: "40x",
-              ["@media (min-width:1047px)"]: {
-                width: "124px",
-                height: "53px",
-              },
-            },
-          }}
-        >
-          <img src={logoEdu} alt="Logo Edusogno" />
-        </Box>
-      </Header>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "row",
-            width: "calc(140px +  10vw)",
-            height: "calc(200px + 10vh)",
-            margin: "auto",
-            ["@media (min-width:1024px) and (max-height:1080px)"]: {
-              height: "calc(100px + 15vh)",
-              width: "calc(90px +  10vw)",
-            },
-            ["@media (max-width:1047px)"]: {
-              width: "calc(260px + 15vw)",
-              height: "calc(100px + 12vh)",
-            },
-          }}
-        >
-          <CaImage />
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            // my: "1rem",
-            ["@media (max-width:1047px)"]: {
-              gap: "0.5rem",
-            },
-          }}
-        >
-          <Typography
-            component={"p"}
-            color="secondary"
-            sx={{
-              fontSize: "calc(24px + 1vw)",
-              fontWeight: "700",
-              ["@media (max-width:1047px)"]: {
-                textAlign: "center",
-                fontSize: "calc(18px + 1vh)",
-                // maxWidth: "39",
-              },
-            }}
-          >
-            Qual è il tuo livello di <br className="lg:hidden" /> inglese? 🔍
-          </Typography>
-          <Typography
-            component={"p"}
-            color="secondary"
-            sx={{
-              fontSize: "calc(16px + 0.5vw)",
-              display: "flex",
-              flexDirection: "row",
-              ["@media (max-width:1047px)"]: {
-                textAlign: "center",
-                fontSize: "calc(14px + 0.5vw)",
-                maxWidth: "66%",
-              },
-            }}
-          >
-            C1, B2 o Shish?&nbsp;
-            <BritishFlag />
-          </Typography>
-        </Box>
-      </Box>
+    <>
+      <div className="flex flex-col items-center justify-between h-full py-4 lg:px-0 px-3 max-w-[750px] mx-auto">
+        <Header>What is your English level?</Header>
+        <p className="text-primary font-[Poppins] md:text-[20px] mt-2 !leading-[99.5%] text-sm flex flex-row items-center">
+          Test it now!&nbsp;
+          <BritishFlag />
+        </p>
 
-      <Box
-        sx={{
-          backgroundColor: "#d9daf3",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "1rem",
-          paddingTop: "4vh",
-          minHeight: "190px",
-          ["@media (max-height:763px)"]: {
-            paddingTop: "4vh",
-          },
-        }}
-        className="bottom"
-      >
-        <Typography
-          sx={{
-            fontSize: "20px",
-            color: "#ffffff",
-            "& b": {
-              color: "#74DFAC",
-            },
-            ["@media (max-width:1047px)"]: {
-              fontSize: "calc(14px + 1vw)",
-            },
-          }}
-        >
-          Ci vogliono solo <b>6 minuti</b>
-        </Typography>
-        <Button
-          sx={{
-            maxWidth: "418px",
-            width: "100%",
-            color: "#31602A!important",
-            ["@media (max-width:1047px)"]: {
-              maxWidth: "70%",
-            },
-          }}
-          color="green"
-          variant="contained"
-          size="large"
-          onClick={() => navigate(existing && token ? `/quiz/${token}` : tracking_id ? `/ads/${tracking_id}/quiz` : `/quiz`)}
-        >
-          INIZIA IL TEST
-        </Button>
-      </Box>
-    </Box>
+        <EdStart className="w-2/5 lg:w-[316px]" />
+        <div className="text-base md:text-2xl text-center mt-4 px-4">
+          <p className="text-primary">Ensure that you are situated in a tranquil setting and have ample time to complete the test</p>
+          <p className="text-primary font-semibold mt-6">In the event of non-completion, you will be require to restart from the beginning</p>
+        </div>
+      </div>
+      <Footer
+        prompt={
+          <>
+            It only takes <b>20 minutes</b>
+          </>
+        }
+        button={
+          <Button variant="contained" color="primary" size="large" className="lg:max-w-[599px] max-w-[90vw] w-full" onClick={() => navigate(existing && token ? `/quiz/${token}` : tracking_id ? `/ads/${tracking_id}/quiz` : `/quiz`)}>
+            get started
+          </Button>
+        }
+      />
+    </>
   );
 };
 

@@ -1,14 +1,14 @@
-import { Box, Button, Typography } from "@mui/material";
-import React, { useState } from "react";
-
-import Header from "../components/Header";
-
-import logoEduBianco from "../assets/img/logoEduBianco.svg";
+import Button from "@mui/material/Button";
+import Header from "./common/Header";
+import Footer from "./common/Footer";
+import { EdFinish } from "@components/Illustration";
 import { useLocation } from "react-router-dom";
-const ResultPage = () => {
+import React from "react";
+
+function ResultsPage(props) {
   const { level, points, token, leadData } = useLocation().state;
 
-  console.log({ token, leadData });
+  console.log({ token, leadData, level, points });
 
   const updateUser = async () => {
     const response = await fetch(`https://api.edusogno.com/api/quiz/${token}`, {
@@ -47,165 +47,50 @@ const ResultPage = () => {
   }
 
   return (
-    <Box
-      sx={{
-        display: "grid",
-        backgroundColor: "#2D224C",
-        gridTemplateColumns: "1fr",
-        gridTemplateRows: "15vh 45vh 35vh",
-        height: "calc(var(--vh, 1vh) * 100)",
-        "&::-webkit-scrollbar": {
-          width: "0em",
-        },
-        "scrollbar-width": "none",
-        ["@media (min-width:763px) and (max-height:1080px)"]: {
-          gridTemplateRows: "12vh 45vh 38vh",
-        },
-        ["@media (max-width:1047px)"]: {
-          // gap: "2vh",
-          gridTemplateRows: "15vh 35vh 50vh",
-        },
-      }}
-      className="overflow-y-hidden"
-    >
-      <Header white={true} form={true}>
-        <Box
-          sx={{
-            width: "fit-content",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            margin: "0 auto 10vh auto",
-            "& img": {
-              width: "94px",
-              height: "40x",
-              ["@media (min-width:1047px)"]: {
-                width: "124px",
-                height: "53px",
-              },
-            },
-          }}
-        >
-          <img src={logoEduBianco} alt="Logo Edusogno" />
-        </Box>
-      </Header>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          // paddingBottom: "8%",
-        }}
-      >
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            my: "1rem",
-            ["@media (max-width:1047px)"]: {
-              gap: "0.5rem",
-            },
-          }}
-        >
-          <Typography
-            component={"p"}
-            sx={{
-              fontSize: "calc(28px + 1vw)",
-              fontWeight: "600",
-              color: "#ffffff",
-              textAlign: "center",
-              ["@media (max-width:1047px)"]: {
-                fontSize: "calc(22px + 2vw)",
-                // maxWidth: "39",
-              },
-            }}
-          >
+    <>
+      <div data-content className="flex flex-col items-center justify-between py-4 gap-8 max-w-[760px]  px-[min(10%,2rem)] mx-auto">
+        {token ? (
+          <Header> Great! Thanks for taking the time</Header>
+        ) : (
+          <Header>
+            {" "}
             💪 <br />
             Ottimo lavoro!
-          </Typography>
-          <Typography
-            color="secondary"
-            sx={{
-              fontSize: "calc(16px + 0.5vw)",
-              color: "#ffffff",
-              "& b": {
-                color: "#74DFAC",
-              },
-              textAlign: "center",
-              maxWidth: "60%",
-              ["@media (max-width:1047px)"]: {
-                fontSize: "calc(12px + 0.5vw)",
-                textColor: "#ffffff",
-              },
-            }}
-          >
-            {token ? `Il tuo livello di grammatica è` : `Purtroppo tramite questo test possiamo solo darti una stima del tuo livello di grammatica che è intorno ad un `}
-            <br /> <b>{level}</b>
-          </Typography>
-        </Box>
-      </Box>
+          </Header>
+        )}
+        <EdFinish className="w-8/12 md:[516px] lg:w-[216px]" />
+        {token ? (
+          <div className="text-base md:text-2xl text-center mt-4 flex flex-col mb-4">
+            <p className="text-secondary font-semibold">Your level will be assessed by our team</p>
+            <p className="text-primary px-4">Go to login and improve it when your course starts</p>
+            <p className="text-primary font-semibold mt-6">We hope you will enjoy the course!</p>
+          </div>
+        ) : (
+          <div className="text-base md:text-2xl text-center mt-4 flex flex-col mb-4">
+            <p className="text-secondary font-semibold">Purtroppo tramite questo test possiamo solo darti una stima del tuo livello di</p>
+            <p className="text-primary px-4">grammatica che è intorno ad un</p>
+            <p className="text-primary font-semibold mt-6">{level}</p>
+          </div>
+        )}
+      </div>
+      <Footer
+        prompt={<>{/* {text[3].split(":")[0]}&nbsp;<b>{text[3].split(":")[1]}</b> */}</>}
+        button={
+          // <div className="flex flex-row items-center gap-2 lg:gap-8 lg:max-w-[600px] max-w-[90vw] w-full px-4">
 
-      {!token ? (
-        <Box
-          sx={{
-            // backgroundColor: "#d9daf3",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "1rem",
-          }}
-        >
-          <Typography
-            sx={{
-              color: "#ffffff",
-              "& b": {
-                color: "#74DFAC",
-              },
-              fontSize: "calc(20px + 1vw)",
-              textAlign: "center",
-              maxWidth: "90%",
-              ["@media (max-width:1047px)"]: {
-                fontSize: "calc(14px + 1vw)",
-              },
-            }}
-          >
-            Per scoprire qual è il tuo vero livello e ottenere la&nbsp;
-            <b>certificazione</b>, fissa una prova di speaking gratuita con i nostri esperti
-          </Typography>
-          <Box className="flex flex-col lg:flex-row gap-4 w-full justify-center items-center">
-            <ArrowsSm className="lg:hidden" />
-            <ArrowsMD className="hidden lg:block" />
-            <a href={!leadData ? "https://edusogno.com/acceleratore-di-inglese/?utm_source=ig&utm_medium=paid&utm_campaign=edusogno&utm_content=testinglese" : `https://edusogno.com/acceleratore-di-inglese/${leadData}`} target="_blank" rel="noopener noreferrer" className=" text-center">
-              <Button
-                sx={{
-                  maxWidth: "418px",
-                  width: "100%",
-                  boxShadow: "0px 0px 30px #D4145A",
-                  height: "10vh",
-                  fontSize: "calc(32px + 0.5vh)!important",
-                  // color: "#31602A!important",
-                  ["@media (max-width:763px)"]: {
-                    maxWidth: "75%",
-                    fontSize: "calc(16px + 0.5vh)!important",
-                  },
-                }}
-                size="large"
-                color="button"
-                variant="contained"
-              >
-                FISSA UN INCONTRO
-              </Button>
-            </a>
-            <ArrowsMD className="rotate-180 hidden lg:block" />
-          </Box>
-        </Box>
-      ) : null}
-    </Box>
+          token ? (
+            <Button component={"a"} href="academy.edusogno.com/user" variant="contained" color="white" size="large" className="lg:max-w-[599px] max-w-[90vw] w-full text-primary">
+              go to login
+            </Button>
+          ) : (
+            <Button variant="contained" color="white" size="large" className="lg:max-w-[599px] max-w-[90vw] w-full text-primary" component={"a"} href={!leadData ? "https://edusogno.com/acceleratore-di-inglese/?utm_source=ig&utm_medium=paid&utm_campaign=edusogno&utm_content=testinglese" : `https://edusogno.com/acceleratore-di-inglese/${leadData}`}>
+              fissa un incontro
+            </Button>
+          )
+        }
+      />
+    </>
   );
-};
+}
 
-export default ResultPage;
+export default ResultsPage;

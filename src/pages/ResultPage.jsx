@@ -8,8 +8,6 @@ import React from "react";
 function ResultsPage(props) {
   const { level, points, token, leadData } = useLocation().state;
 
-  console.log({ token, leadData, level, points });
-
   const updateUser = async () => {
     const response = await fetch(`https://api.edusogno.com/api/quiz/${token}`, {
       method: "POST",
@@ -79,7 +77,7 @@ function ResultsPage(props) {
           // <div className="flex flex-row items-center gap-2 lg:gap-8 lg:max-w-[600px] max-w-[90vw] w-full px-4">
 
           token ? (
-            <Button component={"a"} href="academy.edusogno.com/user" variant="contained" color="white" size="large" className="lg:max-w-[599px] max-w-[90vw] w-full text-primary">
+            <Button component={"a"} href="https://academy.edusogno.com/user" variant="contained" color="white" size="large" className="lg:max-w-[599px] max-w-[90vw] w-full text-primary">
               go to login
             </Button>
           ) : (
